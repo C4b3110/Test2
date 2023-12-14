@@ -1,0 +1,70 @@
+Script started on 2023-12-08 13:13:17-08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="65" LINES="27"]
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ whoami
+[?2004lkc
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ tldr who
+[?2004l
+  [1mwho[0m
+
+  Display who is logged in and related data (processes, boot time).[0m
+  More information: https://www.gnu.org/software/coreutils/who.[0m
+
+  [32m- Display the username, line, and time of all currently logged-in sessions:[0m
+    [31mwho[0m
+
+  [32m- Display information only for the current terminal session:[0m
+    [31mwho am i[0m
+
+  [32m- Display all available information:[0m
+    [31mwho -a[0m
+
+  [32m- Display all available information with table headers:[0m
+    [31mwho -a -H[0m
+
+[0m[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ who
+[?2004lkc       tty7         2023-12-08 12:04 (:0)
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ who -a
+[?2004l           system boot  2023-12-08 12:02
+           run-level 5  2023-12-08 12:02
+LOGIN      tty1         2023-12-08 12:02              1349 id=tty1
+kc       + tty7         2023-12-08 12:04 01:11        1647 (:0)
+           pts/2        2023-12-08 12:33              3005 id=ts/2  term=0 exit=0
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ w
+[?2004l 13:14:13 up  1:11,  1 user,  load average: 0.04, 0.03, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+kc       tty7     :0               12:04    1:11m 22.93s  0.04s /usr/li
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ id
+[?2004luid=1000(kc) gid=1000(kc) groups=1000(kc),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),110(lxd)
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su guest
+[?2004lPassword: 
+[?2004h]0;guest@csc235: /home/kc/CSC235[01;32mguest@csc235[00m:[01;34m/home/kc/CSC235[00m$ if
+[?2004l[?2004h> 
+[?2004l[?2004h> exit
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;guest@csc235: /home/kc/CSC235[01;32mguest@csc235[00m:[01;34m/home/kc/CSC235[00m$ id
+[?2004luid=1001(guest) gid=1001(guest) groups=1001(guest)
+[?2004h]0;guest@csc235: /home/kc/CSC235[01;32mguest@csc235[00m:[01;34m/home/kc/CSC235[00m$ cls
+[?2004lCommand 'cls' not found, but there are 18 similar ones.
+[?2004h]0;guest@csc235: /home/kc/CSC235[01;32mguest@csc235[00m:[01;34m/home/kc/CSC235[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;guest@csc235: /home/kc/CSC235[01;32mguest@csc235[00m:[01;34m/home/kc/CSC235[00m$ exit
+[?2004lexit
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su - guest
+[?2004lPassword: 
+[?2004h]0;guest@csc235: ~[01;32mguest@csc235[00m:[01;34m~[00m$ pwd
+[?2004l/home/guest
+[?2004h]0;guest@csc235: ~[01;32mguest@csc235[00m:[01;34m~[00m$ logout
+[?2004l[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ useradd test
+[?2004luseradd: Permission denied.
+useradd: cannot lock /etc/passwd; try again later.
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo /usr/sbin/useradd test[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K use[K[K[K[K !!
+[?2004lsudo useradd test
+[sudo] password for kc: 
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo /usr/sbin/user
+useradd  userdel  usermod  
+]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo /usr/sbin/user
+useradd  userdel  usermod  
+]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo /usr/sbin/useras[Kdd test
+[?2004luseradd: user 'test' already exists
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ exit
+[?2004lexit
+
+Script done on 2023-12-08 13:18:17-08:00 [COMMAND_EXIT_CODE="9"]

@@ -1,0 +1,18 @@
+1. Creation and termination of processes:
+
+Creation: Processes are created in Linux using system calls like fork() and exec(). fork() creates a child process as a copy of the parent, while exec() replaces the process's memory space with a new program. 
+
+Termination: Processes can terminate normally (after completing their task or via a command) OR be killed by signals like 'SIGKILL' or 'SIGTERM'.
+
+2. Command for Process Management:
+
+'ps' shows currently running processes. 'ps aux' shows detailed information about all running processes. 
+
+'top'/'htop' displays real-time process information. 'top' displays an interactive process list. 
+
+'kill'/'killall' sens signals to terminate processes. 'kill -9 [PID]' forcfully terminates a process.
+
+'bg'/fg' moves jobs to background/foreground. 'fg %1' brings the first job to the foreground. 
+
+'nice'/''renice' changes process priority. 'nice -n 10 [command] &' runs a command in the background, immune to logout. 
+

@@ -1,0 +1,145 @@
+Script started on 2023-12-08 13:33:09-08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="65" LINES="27"]
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ echo Hello ? [K[K> /etc/skel/welcome.txt
+[?2004lbash: /etc/skel/welcome.txt: Permission denied
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo !!
+[?2004lsudo echo Hello > /etc/skel/welcome.txt
+bash: /etc/skel/welcome.txt: Permission denied
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ ls /home/serena/
+[?2004lls: cannot open directory '/home/serena/': Permission denied
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo !!
+[?2004lsudo ls /home/serena/
+[sudo] password for kc: 
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ ls [K[K[Ksu -l serena
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo passwd serena
+[?2004lNew password: 
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: 
+passwd: password updated successfully
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sud[K -l serena
+[?2004lPassword: 
+$ ls
+$ cd
+$ ls
+$ ......
+-sh: 4: ......: not found
+$ logout
+-sh: 5: logout: not found
+$ exit
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su - serena
+[?2004lPassword: 
+$ ls
+$ exit
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su[K[Ksudo passwd V[Kvenus
+[?2004lNew password: 
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: 
+passwd: password updated successfully
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo [K[K[K - venus
+[?2004lPassword: 
+[?2004h]0;venus@csc235: ~[01;32mvenus@csc235[00m:[01;34m~[00m$ ls
+[?2004l[?2004h]0;venus@csc235: ~[01;32mvenus@csc235[00m:[01;34m~[00m$ ls -al
+[?2004ltotal 20
+drwxr-x--- 2 venus venus 4096 Dec  8 13:20 [0m[01;34m.[0m
+drwxr-xr-x 6 root  root  4096 Dec  8 13:20 [01;34m..[0m
+-rw-r--r-- 1 venus venus  220 Jan  6  2022 .bash_logout
+-rw-r--r-- 1 venus venus 3771 Jan  6  2022 .bashrc
+-rw-r--r-- 1 venus venus  807 Jan  6  2022 .profile
+[?2004h]0;venus@csc235: ~[01;32mvenus@csc235[00m:[01;34m~[00m$ cd[K[Kexit
+[?2004llogout
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ ls[K[Kcd[Kd /etc/skel/
+[?2004l[?2004h]0;kc@csc235: /etc/skel[01;32mkc@csc235[00m:[01;34m/etc/skel[00m$ ls
+[?2004l[?2004h]0;kc@csc235: /etc/skel[01;32mkc@csc235[00m:[01;34m/etc/skel[00m$ fzf
+[?2004l[?1049h[?1000h[26A[G[K[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [;m                                                                 [;1;38;5;110m>[m[;m [m[;1m[m[;1m[m[1A[;m                                                                 [;1;38;5;148m⠙[m[2C[;38;5;144m0/0[m[1B[2C[1A[;m                                                                 [2C[;38;5;144m0/0[m[1B[2C[2C[1A[;m                                                                 [2C[;38;5;144m0/0[m[1B[2C[?1049l[?1000l[?2004h]0;kc@csc235: /etc/skel[01;32mkc@csc235[00m:[01;34m/etc/skel[00m$ touch welcome.txt; echo Hello ?[K> welcome.txt
+[?2004ltouch: cannot touch 'welcome.txt': Permission denied
+bash: welcome.txt: Permission denied
+[?2004h]0;kc@csc235: /etc/skel[01;32mkc@csc235[00m:[01;34m/etc/skel[00m$ sudo !!
+[?2004lsudo touch welcome.txt; echo Hello > welcome.txt
+bash: welcome.txt: Permission denied
+[?2004h]0;kc@csc235: /etc/skel[01;32mkc@csc235[00m:[01;34m/etc/skel[00m$ ls
+[?2004lwelcome.txt
+[?2004h]0;kc@csc235: /etc/skel[01;32mkc@csc235[00m:[01;34m/etc/skel[00m$ cat welcome.txt 
+[?2004l[?2004h]0;kc@csc235: /etc/skel[01;32mkc@csc235[00m:[01;34m/etc/skel[00m$ nan[K[K[Kcd[K[Kls /home/serena/[K[K[K[K[K[K[Kvenus/
+[?2004lls: cannot open directory '/home/venus/': Permission denied
+[?2004h]0;kc@csc235: /etc/skel[01;32mkc@csc235[00m:[01;34m/etc/skel[00m$ cd /home/
+[?2004l[?2004h]0;kc@csc235: /home[01;32mkc@csc235[00m:[01;34m/home[00m$ ls
+[?2004l[0m[01;34mguest[0m  [01;34mkc[0m  [01;34mserena[0m  [01;34mvenus[0m
+[?2004h]0;kc@csc235: /home[01;32mkc@csc235[00m:[01;34m/home[00m$ cd [K[K[Ksu - venus 
+[?2004lPassword: 
+[?2004h]0;venus@csc235: ~[01;32mvenus@csc235[00m:[01;34m~[00m$ ls
+[?2004l[?2004h]0;venus@csc235: ~[01;32mvenus@csc235[00m:[01;34m~[00m$ cd /h[K[K[K[K[Kcls[K[K[Kexit;cls
+[?2004llogout
+[?2004h]0;kc@csc235: /home[01;32mkc@csc235[00m:[01;34m/home[00m$ cls
+[?2004l[H[2J[3J[?2004h]0;kc@csc235: /home[01;32mkc@csc235[00m:[01;34m/home[00m$ ls
+[?2004l[0m[01;34mguest[0m  [01;34mkc[0m  [01;34mserena[0m  [01;34mvenus[0m
+[?2004h]0;kc@csc235: /home[01;32mkc@csc235[00m:[01;34m/home[00m$ cd kc[Kc/CSC235/
+[?2004l[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ cls
+[?2004l[H[2J[3J[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo nano /etc/skel/welcome.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;27r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[25;26H(B[0;7m[ Reading... ](B[m[25;25H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 6.2          /etc/skel/welcome.txt                    [1;64H(B[m[26d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut[53G(B[0;7m^T(B[m Execute[27d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;47H(B[0;7m*[64G(B[m[?12l[?25h[2dH[?25l[?12l[?25he[?25l[?12l[?25hl[?25l[?12l[?25hl[?25l[?12l[?25hl[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25ho[?25l[?12l[?25ho[?25l[?12l[?25ho[?25l[?12l[?25ho[?25l[?12l[?25ho[?25l[25d(B[0;7mSave modified buffer?                                            [26;1H Y(B[m Yes[K[27d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[25;23H[?12l[?25h[?25l[26d(B[0;7m^G(B[m Help[26;17H(B[0;7mM-D(B[m DOS Format  (B[0;7mM-A(B[m Append[49G(B[0;7mM-B(B[m Backup File[27d(B[0;7m^C(B[m Cancel[17G(B[0;7mM-M(B[m Mac Format  (B[0;7mM-P(B[m Prepend     (B[0;7m^T(B[m Browse[25d(B[0;7mFile Name to Write: /etc/skel/welcome.txt(B[m[?12l[?25h[?25l[25;25H[1K (B[0;7m[ Writing... ](B[m[K[1;47H(B[0;7m [64G(B[m[25;25H(B[0;7m[ Wrote 1 line ](B[m[J[27d[?12l[?25h[27;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ useradd -m test
+[?2004luseradd: user 'test' already exists
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ useradd -m test2
+[?2004luseradd: Permission denied.
+useradd: cannot lock /etc/passwd; try again later.
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su
+[?2004lPassword: 
+^C
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su -
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su [K[K[Ktldr su
+[?2004l
+  [1msu[0m
+
+  Switch shell to another user.[0m
+  More information: https://manned.org/su.[0m
+
+  [32m- Switch to superuser (requires the root password):[0m
+    [31msu[0m
+
+  [32m- Switch to a given user (requires the user's password):[0m
+    [31msu [0musername[0m[31m[0m
+
+  [32m- Switch to a given user and simulate a full login shell:[0m
+    [31msu - [0musername[0m[31m[0m
+
+  [32m- Execute a command as another user:[0m
+    [31msu - [0musername[0m[31m -c "[0mcommand[0m[31m"[0m
+
+[0m[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su -[K[K[K[Ksu
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo useradd -m test2
+[?2004l[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ ls -l /home/test2/
+[?2004lls: cannot open directory '/home/test2/': Permission denied
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo userdel -r test tes2[Kt2
+[?2004lUsage: userdel [options] LOGIN
+
+Options:
+  -f, --force                   force removal of files,
+                                even if not owned by user
+  -h, --help                    display this help message and exit
+  -r, --remove                  remove home directory and mail spool
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+      --extrausers              Use the extra users database
+  -Z, --selinux-user            remove any SELinux user mapping for the user
+
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ ls /home/
+[?2004l[0m[01;34mguest[0m  [01;34mkc[0m  [01;34mserena[0m  [01;34mtest2[0m  [01;34mvenus[0m
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo s[Kuserdel test2[K[K[K[K[K-R[Kr test
+[?2004luserdel: test mail spool (/var/mail/test) not found
+userdel: test home directory (/home/test) not found
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo userdel -r test2
+[?2004luserdel: test2 mail spool (/var/mail/test2) not found
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ ls /home/
+[?2004l[0m[01;34mguest[0m  [01;34mkc[0m  [01;34mserena[0m  [01;34mvenus[0m
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ grep serena /etc/passwd
+[?2004l[01;31m[Kserena[m[K:x:1003:1003:Serena Williams:/home/[01;31m[Kserena[m[K:/bin/sh
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ user[K[K[K[Ksudo usermod -s /bin//bash[K[K[K[K[Kbsah[K[K[Kash serena
+[?2004l[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo usermod -s /bin/bash serena[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pgrep serena /etc/passwd
+[?2004l[01;31m[Kserena[m[K:x:1003:1003:Serena Williams:/home/[01;31m[Kserena[m[K:/bin/bash
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ exit
+[?2004lexit
+
+Script done on 2023-12-08 13:43:11-08:00 [COMMAND_EXIT_CODE="0"]

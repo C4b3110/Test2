@@ -1,0 +1,13 @@
+1. Differences between at, cron, and anacron:
+
+'at' is a command for a specified time, but only once. It's generally only used for 1 time tasks.
+
+'cron' is a command for repeated tasks at specific times and dates. It's ideal for refular tasks like daily backups.
+
+'anacron' is soooort of like cron, but desifned foe systems that don't run continuously. Anacron can run missed tasks once the system is up. 
+
+2. Differences between crontab -e, and vi /etc/crontab
+
+'crontab -e' edits the crontab file for the current user, allowing them to schedule tasks that will run under their user account. 
+
+'vi /etc/crontab' edits the systems crontab file. the system's crontab file schedules tasks to run as root or any specified user. This requires administrative priviledges. 

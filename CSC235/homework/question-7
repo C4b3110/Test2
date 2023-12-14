@@ -1,0 +1,5 @@
+I believe that what was displayed, shows me that theres a ridiculous amount of files with the inode of '2'. Maybe that means that there's a bunch of links/symbolic links that point to the same file? OR that there's multiple files that have the inode of 2.. meaning that there are more lists that have the same inodes.
+
+I hope im explaining what I'm thinking clearly.. Like imagine you have this paper, and on this paper is a list of numbers from 1-1000 (its obviously more, but still...) these numbers represent the inodes for that specific piece of paper. 
+Now let's say that you have MULTIPLE pieces of paper, all of those papers have the same list of numbers, but the inodes correlate to that piece of paper, and don't point to eachother at all
+

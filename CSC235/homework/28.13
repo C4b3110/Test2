@@ -1,0 +1,2455 @@
+Script started on 2023-12-08 13:18:49-08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="65" LINES="27"]
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ useradd -m -c "[K"[K'[K"[K'Serena Williams' serena
+[?2004luseradd: Permission denied.
+useradd: cannot lock /etc/passwd; try again later.
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo !!
+[?2004lsudo useradd -m -c 'Serena Williams' serena
+[sudo] password for kc: 
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ u[Ksudo useradd -m -c [K 'Venus Williams' -s /bin/b ash [K/[K venus
+[?2004l[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ tail -3[K2 /etc/passwd
+[?2004lserena:x:1003:1003:Serena Williams:/home/serena:/bin/sh
+venus:x:1004:1004:Venus Williams:/home/venus:/bin/bash
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ tail -32[K[K2 /etc/shas[Kdow
+[?2004ltail: cannot open '/etc/shadow' for reading: Permission denied
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo !!
+[?2004lsudo tail -2 /etc/shadow
+serena:!:19699:0:99999:7:::
+venus:!:19699:0:99999:7:::
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ tail -2 /etc/group
+[?2004lserena:x:1003:
+venus:x:1004:
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ ls -lrt /home/ | tail -2
+[?2004ldrwxr-x---  2 serena serena 4096 Dec  8 13:19 serena
+drwxr-x---  2 venus  venus  4096 Dec  8 13:20 venus
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ useradd  -s[K[K[K[K[Kd -s /bin/dash [K[K[Kte einstime
+[?2004luseradd: Permission denied.
+useradd: cannot lock /etc/passwd; try again later.
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo !!
+[?2004lsudo useradd -s /bin/date einstime
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su - einstime 
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su - einstime 
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su -l einstime
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ ????????
+[?2004l????????: command not found
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ cls
+[?2004l[H[2J[3J[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su -
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ ca[K[Kcat [K[K[K[Kls -l /home[Ke/
+[?2004ltotal 16
+drwxr-x---  3 guest  guest  4096 Dec  8 13:15 [0m[01;34mguest[0m
+drwxr-x--- 22 kc     kc     4096 Dec  8 13:18 [01;34mkc[0m
+drwxr-x---  2 serena serena 4096 Dec  8 13:19 [01;34mserena[0m
+drwxr-x---  2 venus  venus  4096 Dec  8 13:20 [01;34mvenus[0m
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ cd /etc/binfmt.d/[K[K[K[K[K[K[K[K[K[K[K[K[Kbin/
+[?2004l[?2004h]0;kc@csc235: /bin[01;32mkc@csc235[00m:[01;34m/bin[00m$ ls
+[?2004l[0m[01;32m'['[0m
+ [01;32m411toppm[0m
+ [01;32maa-enabled[0m
+ [01;32maa-exec[0m
+ [01;32maa-features-abi[0m
+ [01;32maconnect[0m
+ [01;32macpi_listen[0m
+ [01;32macyclic[0m
+ [01;32madd-apt-repository[0m
+ [01;32maddpart[0m
+ [01;36maddr2line[0m
+ [01;32mafm2pl[0m
+ [01;32mafm2tfm[0m
+ [01;32mairscan-discover[0m
+ [01;32maleph[0m
+ [01;32malsabat[0m
+ [01;32malsaloop[0m
+ [01;32malsamixer[0m
+ [01;32malsatplg[0m
+ [01;32malsaucm[0m
+ [01;32mamidi[0m
+ [01;32mamixer[0m
+ [01;36manimate[0m
+ [01;36manimate-im6[0m
+ [01;32manimate-im6.q16[0m
+ [01;32manytopnm[0m
+ [01;32mapg[0m
+ [01;32mapgbfm[0m
+ [01;32maplay[0m
+ [01;32maplaymidi[0m
+ [01;32mapport-bug[0m
+ [01;32mapport-cli[0m
+ [01;36mapport-collect[0m
+ [01;32mapport-unpack[0m
+ [01;32mappres[0m
+ [01;32mappstreamcli[0m
+ [01;36mapropos[0m
+ [01;32mapt[0m
+ [01;36mapt-add-repository[0m
+ [01;32mapt-cache[0m
+ [01;32mapt-cdrom[0m
+ [01;32mapt-config[0m
+ [01;32maptdcon[0m
+ [01;32mapt-extracttemplates[0m
+ [01;32mapt-ftparchive[0m
+ [01;32mapt-get[0m
+ [01;32mapt-key[0m
+ [01;32mapt-mark[0m
+ [01;32mapt-sortpkgs[0m
+ [01;32mapturl[0m
+ [01;32mapturl-gtk[0m
+ [01;36mar[0m
+ [01;32march[0m
+ [01;36marecord[0m
+ [01;32marecordmidi[0m
+ [01;32marm2hpdl[0m
+ [01;32marping[0m
+ [01;36mas[0m
+ [01;32masciitopgm[0m
+ [01;32maseqdump[0m
+ [01;32maseqnet[0m
+ [01;32maspell[0m
+ [01;32maspell-import[0m
+ [01;32matktopbm[0m
+ [01;32matobm[0m
+ [01;32mautomat-visualize3[0m
+ [01;32mautosp[0m
+ [01;32mavahi-browse[0m
+ [01;36mavahi-browse-domains[0m
+ [01;32mavahi-publish[0m
+ [01;36mavahi-publish-address[0m
+ [01;36mavahi-publish-service[0m
+ [01;32mavahi-resolve[0m
+ [01;36mavahi-resolve-address[0m
+ [01;36mavahi-resolve-host-name[0m
+ [01;32mavahi-set-host-name[0m
+ [01;32mavinfo[0m
+ [01;36mawk[0m
+ [01;32maxfer[0m
+ [01;32maxohelp[0m
+ [01;32mb2sum[0m
+ [01;32mbaobab[0m
+ [01;32mbase32[0m
+ [01;32mbase64[0m
+ [01;32mbasename[0m
+ [01;32mbasenc[0m
+ [01;32mbash[0m
+ [01;32mbashbug[0m
+ [01;32mbc[0m
+ [01;32mbcomps[0m
+ [01;32mbdftopcf[0m
+ [01;32mbdftruncate[0m
+ [01;36mbibtex[0m
+ [01;32mbibtex8[0m
+ [01;32mbibtex.original[0m
+ [01;32mbibtexu[0m
+ [01;32mbioradtopgm[0m
+ [01;32mbitmap[0m
+ [01;32mbluemoon[0m
+ [01;32mbluetoothctl[0m
+ [01;32mbluetooth-sendto[0m
+ [01;32mbmptopnm[0m
+ [01;36mbmptoppm[0m
+ [01;32mbmtoa[0m
+ [01;32mboltctl[0m
+ [01;32mbootctl[0m
+ [01;32mboxes[0m
+ [01;32mbrltty[0m
+ [01;32mbrltty-ctb[0m
+ [01;32mbrltty-trtxt[0m
+ [01;32mbrltty-ttb[0m
+ [01;32mbroadwayd[0m
+ [01;36mbrowse[0m
+ [01;32mbrushtopbm[0m
+ [01;32mbtattach[0m
+ [01;32mbtmgmt[0m
+ [01;32mbtmon[0m
+ [01;32mbtrfs[0m
+ [01;36mbtrfsck[0m
+ [01;32mbtrfs-convert[0m
+ [01;32mbtrfs-find-root[0m
+ [01;32mbtrfs-image[0m
+ [01;32mbtrfs-map-logical[0m
+ [01;32mbtrfs-select-super[0m
+ [01;32mbtrfstune[0m
+ [01;32mbundle3.0[0m
+ [01;32mbundler3.0[0m
+ [01;32mbunzip2[0m
+ [01;32mbusctl[0m
+ [01;32mbusybox[0m
+ [01;32mbwrap[0m
+ [01;32mbyobu[0m
+ [01;32mbyobu-config[0m
+ [01;32mbyobu-ctrl-a[0m
+ [01;32mbyobu-disable[0m
+ [01;32mbyobu-disable-prompt[0m
+ [01;32mbyobu-enable[0m
+ [01;32mbyobu-enable-prompt[0m
+ [01;32mbyobu-export[0m
+ [01;32mbyobu-janitor[0m
+ [01;32mbyobu-keybindings[0m
+ [01;32mbyobu-launch[0m
+ [01;32mbyobu-launcher[0m
+ [01;32mbyobu-launcher-install[0m
+ [01;32mbyobu-launcher-uninstall[0m
+ [01;32mbyobu-layout[0m
+ [01;32mbyobu-prompt[0m
+ [01;32mbyobu-quiet[0m
+ [01;32mbyobu-reconnect-sockets[0m
+ [01;36mbyobu-screen[0m
+ [01;32mbyobu-select-backend[0m
+ [01;32mbyobu-select-profile[0m
+ [01;32mbyobu-select-session[0m
+ [01;32mbyobu-shell[0m
+ [01;32mbyobu-silent[0m
+ [01;32mbyobu-status[0m
+ [01;32mbyobu-status-detail[0m
+ [01;36mbyobu-tmux[0m
+ [01;32mbyobu-ugraph[0m
+ [01;32mbyobu-ulevel[0m
+ [01;32mbzcat[0m
+ [01;36mbzcmp[0m
+ [01;32mbzdiff[0m
+ [01;36mbzegrep[0m
+ [01;32mbzexe[0m
+ [01;36mbzfgrep[0m
+ [01;32mbzgrep[0m
+ [01;32mbzip2[0m
+ [01;32mbzip2recover[0m
+ [01;36mbzless[0m
+ [01;32mbzmore[0m
+ [01;36mc++[0m
+ [01;36mc89[0m
+ [01;32mc89-gcc[0m
+ [01;36mc99[0m
+ [01;32mc99-gcc[0m
+ [01;32mcacaclock[0m
+ [01;32mcacademo[0m
+ [01;32mcacafire[0m
+ [01;32mcacaplay[0m
+ [01;32mcacaserver[0m
+ [01;32mcacaview[0m
+ [01;36mcal[0m
+ [01;32mcalibrate_ppa[0m
+ [01;32mcanberra-gtk-play[0m
+ [01;32mcancel[0m
+ [01;36mcaptoinfo[0m
+ [01;32mcat[0m
+ [01;32mcatman[0m
+ [01;32mcautious-launcher[0m
+ [01;36mcc[0m
+ [01;32mccomps[0m
+ [01;32mcd-create-profile[0m
+ [01;32mcd-fix-profile[0m
+ [01;32mcd-iccdump[0m
+ [01;32mcd-it8[0m
+ [01;36mc++filt[0m
+ [01;32mcftp3[0m
+ [01;32mchacl[0m
+ [01;32mchafa[0m
+ [30;43mchage[0m
+ [01;36mchardet[0m
+ [01;32mchardetect[0m
+ [01;32mchattr[0m
+ [01;32mchcon[0m
+ [01;32mcheck-language-support[0m
+ [01;32mcheese[0m
+ [37;41mchfn[0m
+ [01;32mchgrp[0m
+ [01;32mchkdvifont[0m
+ [01;32mchmod[0m
+ [01;32mchoom[0m
+ [01;32mchown[0m
+ [01;32mchrt[0m
+ [37;41mchsh[0m
+ [01;32mchvt[0m
+ [01;32mciptool[0m
+ [01;36mcirco[0m
+ [01;32mckbcomp[0m
+ [01;32mckeygen3[0m
+ [01;32mcksum[0m
+ [01;32mclear[0m
+ [01;32mclear_console[0m
+ [01;32mcloud-id[0m
+ [01;32mcloud-init[0m
+ [01;32mcloud-init-per[0m
+ [01;32mcluster[0m
+ [01;32mcmatrix[0m
+ [01;32mcmp[0m
+ [01;32mcmuwmtopbm[0m
+ [01;32mcodepage[0m
+ [01;32mcol[0m
+ [01;32mcol1[0m
+ [01;36mcol2[0m
+ [01;36mcol3[0m
+ [01;36mcol4[0m
+ [01;36mcol5[0m
+ [01;36mcol6[0m
+ [01;36mcol7[0m
+ [01;36mcol8[0m
+ [01;36mcol9[0m
+ [01;32mcolcrt[0m
+ [01;32mcolormgr[0m
+ [01;32mcolrm[0m
+ [01;32mcolumn[0m
+ [01;32mcomm[0m
+ [01;36mcompare[0m
+ [01;36mcompare-im6[0m
+ [01;32mcompare-im6.q16[0m
+ [01;36mcompose[0m
+ [01;36mcomposite[0m
+ [01;36mcomposite-im6[0m
+ [01;32mcomposite-im6.q16[0m
+ [01;32mconch3[0m
+ [01;36mconjure[0m
+ [01;36mconjure-im6[0m
+ [01;32mconjure-im6.q16[0m
+ [01;36mconvert[0m
+ [01;36mconvert-im6[0m
+ [01;32mconvert-im6.q16[0m
+ [01;32mcorelist[0m
+ [01;32mcp[0m
+ [01;32mcpan[0m
+ [01;32mcpan5.34-x86_64-linux-gnu[0m
+ [01;32mcpio[0m
+ [01;36mcpp[0m
+ [01;36mcpp-11[0m
+ [01;36mcpp-12[0m
+ [01;32mc_rehash[0m
+ [30;43mcrontab[0m
+ [01;32mcsplit[0m
+ [01;36mctags[0m
+ [01;32mctags.emacs[0m
+ [01;32mctail[0m
+ [01;32mctangle[0m
+ [01;32mctie[0m
+ [01;36mctstat[0m
+ [01;32mctwill[0m
+ [01;32mctwill-refsort[0m
+ [01;32mctwill-twinx[0m
+ [01;32mcupstestppd[0m
+ [01;32mcurl[0m
+ [01;32mcut[0m
+ [01;32mcvt[0m
+ [01;32mcvtsudoers[0m
+ [01;32mcweave[0m
+ [01;32mdash[0m
+ [01;32mdate[0m
+ [01;32mdbus-cleanup-sockets[0m
+ [01;32mdbus-daemon[0m
+ [01;32mdbus-monitor[0m
+ [01;32mdbus-run-session[0m
+ [01;32mdbus-send[0m
+ [01;32mdbus-update-activation-environment[0m
+ [01;32mdbus-uuidgen[0m
+ [01;32mdbxtool[0m
+ [01;32mdc[0m
+ [01;32mdconf[0m
+ [01;32mdd[0m
+ [01;32mddstdecode[0m
+ [01;32mdeallocvt[0m
+ [01;32mdebconf[0m
+ [01;32mdebconf-apt-progress[0m
+ [01;32mdebconf-communicate[0m
+ [01;32mdebconf-copydb[0m
+ [01;32mdebconf-escape[0m
+ [01;32mdebconf-set-selections[0m
+ [01;32mdebconf-show[0m
+ [01;32mdebian-distro-info[0m
+ [01;32mdeb-systemd-helper[0m
+ [01;32mdeb-systemd-invoke[0m
+ [01;32mdebugedit[0m
+ [01;32mdeja-dup[0m
+ [01;32mdelaunay[0m
+ [01;32mdelpart[0m
+ [01;32mdelv[0m
+ [01;36mdesktop-file-edit[0m
+ [01;32mdesktop-file-install[0m
+ [01;32mdesktop-file-validate[0m
+ [01;32mdetex[0m
+ [01;32mdevdump[0m
+ [01;32mdevnag[0m
+ [01;32mdf[0m
+ [01;32mdfu-tool[0m
+ [01;32mdh_bash-completion[0m
+ [01;32mdh_dkms[0m
+ [01;32mdh_installtex[0m
+ [01;32mdh_installxmlcatalogs[0m
+ [01;32mdh_numpy3[0m
+ [01;32mdh_perl_openssl[0m
+ [01;32mdiff[0m
+ [01;32mdiff3[0m
+ [01;32mdiffimg[0m
+ [01;32mdig[0m
+ [01;32mdijkstra[0m
+ [01;32mdir[0m
+ [01;32mdircolors[0m
+ [01;32mdirmngr[0m
+ [01;32mdirmngr-client[0m
+ [01;32mdirname[0m
+ [01;32mdirsplit[0m
+ [01;32mdisdvi[0m
+ [01;36mdisplay[0m
+ [01;36mdisplay-im6[0m
+ [01;32mdisplay-im6.q16[0m
+ [01;36mdistro-info[0m
+ [01;32mdmesg[0m
+ [01;32mdm-tool[0m
+ [01;36mdnsdomainname[0m
+ [01;36mdomainname[0m
+ [01;32mdo-release-upgrade[0m
+ [01;36mdot[0m
+ [01;36mdot2gxl[0m
+ [01;32mdot_builtins[0m
+ [01;32mdotty[0m
+ [01;32mdpkg[0m
+ [01;32mdpkg-architecture[0m
+ [01;32mdpkg-buildflags[0m
+ [01;32mdpkg-buildpackage[0m
+ [01;32mdpkg-checkbuilddeps[0m
+ [01;32mdpkg-deb[0m
+ [01;32mdpkg-distaddfile[0m
+ [01;32mdpkg-divert[0m
+ [01;32mdpkg-genbuildinfo[0m
+ [01;32mdpkg-genchanges[0m
+ [01;32mdpkg-gencontrol[0m
+ [01;32mdpkg-gensymbols[0m
+ [01;32mdpkg-maintscript-helper[0m
+ [01;32mdpkg-mergechangelogs[0m
+ [01;32mdpkg-name[0m
+ [01;32mdpkg-parsechangelog[0m
+ [01;32mdpkg-query[0m
+ [01;32mdpkg-realpath[0m
+ [01;32mdpkg-scanpackages[0m
+ [01;32mdpkg-scansources[0m
+ [01;32mdpkg-shlibdeps[0m
+ [01;32mdpkg-source[0m
+ [01;32mdpkg-split[0m
+ [01;32mdpkg-statoverride[0m
+ [01;32mdpkg-trigger[0m
+ [01;32mdpkg-vendor[0m
+ [01;36mdriverless[0m
+ [01;36mdriverless-fax[0m
+ [01;32mdt2dv[0m
+ [01;32mdu[0m
+ [01;32mdumpkeys[0m
+ [01;32mduplicity[0m
+ [01;32mdv2dt[0m
+ [01;32mdvi2tty[0m
+ [01;32mdvibook[0m
+ [01;32mdviconcat[0m
+ [01;32mdvicopy[0m
+ [01;32mdvihp[0m
+ [01;32mdvilj[0m
+ [01;32mdvilj2p[0m
+ [01;32mdvilj4[0m
+ [01;32mdvilj4l[0m
+ [01;36mdvilj6[0m
+ [01;36mdviluatex[0m
+ [01;32mdvipdf[0m
+ [01;36mdvipdfm[0m
+ [01;36mdvipdfmx[0m
+ [01;32mdvipdft[0m
+ [01;32mdvipos[0m
+ [01;32mdvips[0m
+ [01;32mdviselect[0m
+ [01;32mdvispc[0m
+ [01;32mdvisvgm[0m
+ [01;32mdvitodvi[0m
+ [01;36mdvitomp[0m
+ [01;32mdvitype[0m
+ [01;36mdwp[0m
+ [01;32meatmydata[0m
+ [01;36mebb[0m
+ [01;36mebrowse[0m
+ [01;32mebrowse.emacs[0m
+ [01;32mec2metadata[0m
+ [01;32mecho[0m
+ [01;32med[0m
+ [01;32medgepaint[0m
+ [01;36medit[0m
+ [01;36meditor[0m
+ [01;32meditres[0m
+ [01;36meglinfo[0m
+ [01;32meglinfo.x86_64-linux-gnu[0m
+ [01;32megrep[0m
+ [01;32meject[0m
+ [01;36melfedit[0m
+ [01;36memacs[0m
+ [01;36memacsclient[0m
+ [01;32memacsclient.emacs[0m
+ [01;32memacs-gtk[0m
+ [01;32menc2xs[0m
+ [01;32mencguess[0m
+ [01;32menchant-2[0m
+ [01;32menchant-lsmod-2[0m
+ [01;32menv[0m
+ [01;32menvsubst[0m
+ [01;32meog[0m
+ [01;32meps2eps[0m
+ [01;32meptex[0m
+ [01;32meqn[0m
+ [01;36merb[0m
+ [01;32merb3.0[0m
+ [01;36mes2gears_wayland[0m
+ [01;32mes2gears_wayland.x86_64-linux-gnu[0m
+ [01;36mes2gears_x11[0m
+ [01;32mes2gears_x11.x86_64-linux-gnu[0m
+ [01;36mes2_info[0m
+ [01;32mes2_info.x86_64-linux-gnu[0m
+ [01;36mes2tri[0m
+ [01;32mes2tri.x86_64-linux-gnu[0m
+ [01;32mesc-m[0m
+ [01;36metags[0m
+ [01;32metags.emacs[0m
+ [01;36metex[0m
+ [01;32meuptex[0m
+ [01;32meutp[0m
+ [01;32mevince[0m
+ [01;32mevince-previewer[0m
+ [01;32mevince-thumbnailer[0m
+ [01;36mex[0m
+ [01;32mexpand[0m
+ [30;43mexpiry[0m
+ [01;32mexpr[0m
+ [01;36mextractbb[0m
+ [01;32meyuvtoppm[0m
+ [01;32meza[0m
+ [01;32mf2py3[0m
+ [01;32mf2py3.10[0m
+ [01;32mfactor[0m
+ [01;32mfaillog[0m
+ [01;32mfaked-sysv[0m
+ [01;32mfaked-tcp[0m
+ [01;36mfakeroot[0m
+ [01;32mfakeroot-sysv[0m
+ [01;32mfakeroot-tcp[0m
+ [01;32mfallocate[0m
+ [01;32mfalse[0m
+ [01;32mfc-cache[0m
+ [01;32mfc-cat[0m
+ [01;32mfc-conflist[0m
+ [01;32mfc-list[0m
+ [01;32mfc-match[0m
+ [01;32mfc-pattern[0m
+ [01;32mfc-query[0m
+ [01;32mfc-scan[0m
+ [01;32mfc-validate[0m
+ [01;36mfdp[0m
+ [01;32mfgconsole[0m
+ [01;32mfgrep[0m
+ [01;32mfiascotopnm[0m
+ [01;32mfig2dev[0m
+ [01;32mfig2ps2tex[0m
+ [01;36mfiglet[0m
+ [01;36mfiglet-toilet[0m
+ [01;32mfile[0m
+ [01;32mfile2brl[0m
+ [01;32mfile-roller[0m
+ [01;32mfinalrd[0m
+ [01;32mfincore[0m
+ [01;32mfind[0m
+ [01;32mfind-debuginfo[0m
+ [01;32mfindmnt[0m
+ [01;32mfirefox[0m
+ [01;32mfitstopnm[0m
+ [01;32mflock[0m
+ [01;32mfmt[0m
+ [01;36mfmtutil[0m
+ [01;36mfmtutil-sys[0m
+ [01;36mfmtutil-user[0m
+ [01;32mfold[0m
+ [01;32mfonttosfnt[0m
+ [01;32mfoo2ddst[0m
+ [01;32mfoo2ddst-wrapper[0m
+ [01;32mfoo2hbpl2[0m
+ [01;32mfoo2hbpl2-wrapper[0m
+ [01;32mfoo2hiperc[0m
+ [01;32mfoo2hiperc-wrapper[0m
+ [01;32mfoo2hp[0m
+ [01;32mfoo2hp2600-wrapper[0m
+ [01;32mfoo2lava[0m
+ [01;32mfoo2lava-wrapper[0m
+ [01;32mfoo2oak[0m
+ [01;32mfoo2oak-wrapper[0m
+ [01;32mfoo2qpdl[0m
+ [01;32mfoo2qpdl-wrapper[0m
+ [01;32mfoo2slx[0m
+ [01;32mfoo2slx-wrapper[0m
+ [01;32mfoo2xqx[0m
+ [01;32mfoo2xqx-wrapper[0m
+ [01;32mfoo2zjs[0m
+ [01;36mfoo2zjs-icc2ps[0m
+ [01;32mfoo2zjs-pstops[0m
+ [01;32mfoo2zjs-wrapper[0m
+ [01;36mfoomatic-rip[0m
+ [01;32mfprintd-delete[0m
+ [01;32mfprintd-enroll[0m
+ [01;32mfprintd-list[0m
+ [01;32mfprintd-verify[0m
+ [01;32mfree[0m
+ [01;32mfstopgm[0m
+ [01;36mftp[0m
+ [01;32mfunzip[0m
+ [01;32mfuser[0m
+ [01;36mfusermount[0m
+ [37;41mfusermount3[0m
+ [01;36mfuturize[0m
+ [01;36mfwupdagent[0m
+ [01;32mfwupdate[0m
+ [01;32mfwupdmgr[0m
+ [01;32mfwupdtool[0m
+ [01;32mfzf[0m
+ [01;32mfzf-tmux[0m
+ [01;36mg++[0m
+ [01;36mg++-11[0m
+ [01;32mg3topbm[0m
+ [01;32mgamemoded[0m
+ [01;32mgamma4scanimage[0m
+ [01;32mgapplication[0m
+ [01;32mgatttool[0m
+ [01;32mgawk[0m
+ [01;32mgc[0m
+ [01;32mgcalccmd[0m
+ [01;36mgcc[0m
+ [01;36mgcc-11[0m
+ [01;36mgcc-12[0m
+ [01;36mgcc-ar[0m
+ [01;36mgcc-ar-11[0m
+ [01;36mgcc-ar-12[0m
+ [01;36mgcc-nm[0m
+ [01;36mgcc-nm-11[0m
+ [01;36mgcc-nm-12[0m
+ [01;36mgcc-ranlib[0m
+ [01;36mgcc-ranlib-11[0m
+ [01;36mgcc-ranlib-12[0m
+ [01;32mgcore[0m
+ [01;36mgcov[0m
+ [01;36mgcov-11[0m
+ [01;36mgcov-12[0m
+ [01;36mgcov-dump[0m
+ [01;36mgcov-dump-11[0m
+ [01;36mgcov-dump-12[0m
+ [01;36mgcov-tool[0m
+ [01;36mgcov-tool-11[0m
+ [01;36mgcov-tool-12[0m
+ [01;32mgcr-viewer[0m
+ [01;32mgdb[0m
+ [01;32mgdb-add-index[0m
+ [01;32mgdbtui[0m
+ [01;32mgdbus[0m
+ [01;32mgdialog[0m
+ [01;32mgdk-pixbuf-csource[0m
+ [01;32mgdk-pixbuf-pixdata[0m
+ [01;32mgdk-pixbuf-thumbnailer[0m
+ [01;32mgdmflexiserver[0m
+ [01;32mgdm-screenshot[0m
+ [01;32mgedit[0m
+ [01;32mgem[0m
+ [01;32mgem3.0[0m
+ [01;36mgemtopbm[0m
+ [01;32mgemtopnm[0m
+ [01;32mgencat[0m
+ [01;32mgendiff[0m
+ [01;32mgenisoimage[0m
+ [01;36mgeqn[0m
+ [01;36mGET[0m
+ [01;32mgetconf[0m
+ [01;32mgeteltorito[0m
+ [01;32mgetent[0m
+ [01;32mgetfacl[0m
+ [01;32mgetkeycodes[0m
+ [01;32mgetopt[0m
+ [01;32mgettext[0m
+ [01;32mgettext.sh[0m
+ [01;32mgftodvi[0m
+ [01;32mgftopk[0m
+ [01;32mgftype[0m
+ [01;36mghostscript[0m
+ [01;32mgiftopnm[0m
+ [01;36mgimp[0m
+ [01;32mgimp-2.10[0m
+ [01;36mgimp-console[0m
+ [01;32mgimp-console-2.10[0m
+ [01;32mgimp-test-clipboard-2.0[0m
+ [01;36mginstall-info[0m
+ [01;32mgio[0m
+ [01;36mgio-querymodules[0m
+ [01;32mgipddecode[0m
+ [01;32mgit[0m
+ [01;36mgit-receive-pack[0m
+ [01;32mgit-shell[0m
+ [01;36mgit-upload-archive[0m
+ [01;36mgit-upload-pack[0m
+ [01;36mgjs[0m
+ [01;32mgjs-console[0m
+ [01;32mgkbd-keyboard-display[0m
+ [01;36mglib-compile-schemas[0m
+ [01;36mglxdemo[0m
+ [01;32mglxdemo.x86_64-linux-gnu[0m
+ [01;36mglxgears[0m
+ [01;32mglxgears.x86_64-linux-gnu[0m
+ [01;36mglxheads[0m
+ [01;32mglxheads.x86_64-linux-gnu[0m
+ [01;36mglxinfo[0m
+ [01;32mglxinfo.x86_64-linux-gnu[0m
+ [01;36mgmake[0m
+ [01;32mgml2gv[0m
+ [01;32mgnome-calculator[0m
+ [01;32mgnome-calendar[0m
+ [01;36mgnome-characters[0m
+ [01;32mgnome-control-center[0m
+ [01;32mgnome-disk-image-mounter[0m
+ [01;32mgnome-disks[0m
+ [01;32mgnome-extensions[0m
+ [01;32mgnome-font-viewer[0m
+ [01;36mgnome-help[0m
+ [01;36mgnome-keyring[0m
+ [01;32mgnome-keyring-3[0m
+ [01;32mgnome-keyring-daemon[0m
+ [01;32mgnome-language-selector[0m
+ [01;32mgnome-logs[0m
+ [01;32mgnome-power-statistics[0m
+ [01;32mgnome-screensaver[0m
+ [01;32mgnome-screensaver-command[0m
+ [01;32mgnome-session[0m
+ [01;32mgnome-session-custom-session[0m
+ [01;32mgnome-session-inhibit[0m
+ [01;32mgnome-session-properties[0m
+ [01;32mgnome-session-quit[0m
+ [01;32mgnome-shell[0m
+ [01;32mgnome-shell-extension-tool[0m
+ [01;32mgnome-shell-perf-tool[0m
+ [01;32mgnome-software[0m
+ [01;32mgnome-system-monitor[0m
+ [01;32mgnome-terminal[0m
+ [01;32mgnome-terminal.real[0m
+ [01;32mgnome-terminal.wrapper[0m
+ [01;36mgnome-text-editor[0m
+ [01;32mgnome-thumbnail-font[0m
+ [01;32mgnome-todo[0m
+ [01;36mgnome-www-browser[0m
+ [01;36mgold[0m
+ [01;32mgouldtoppm[0m
+ [37;41mgpasswd[0m
+ [01;32mgpg[0m
+ [01;32mgpg-agent[0m
+ [01;32mgpgcompose[0m
+ [01;32mgpgconf[0m
+ [01;32mgpg-connect-agent[0m
+ [01;32mgpgparsemail[0m
+ [01;32mgpgsm[0m
+ [01;32mgpgsplit[0m
+ [01;32mgpgtar[0m
+ [01;32mgpgv[0m
+ [01;32mgpg-wks-server[0m
+ [01;32mgpg-zip[0m
+ [01;36mgpic[0m
+ [01;36mgprof[0m
+ [01;32mgpu-manager[0m
+ [01;32mgraphml2gv[0m
+ [01;32mgrdctl[0m
+ [01;32mgregorio[0m
+ [01;32mgrep[0m
+ [01;36mgrep-aptavail[0m
+ [01;36mgrep-available[0m
+ [01;32mgrep-dctrl[0m
+ [01;36mgrep-debtags[0m
+ [01;36mgrep-status[0m
+ [01;32mgresource[0m
+ [01;32mgroff[0m
+ [01;32mgrog[0m
+ [01;32mgrops[0m
+ [01;32mgrotty[0m
+ [01;32mgroups[0m
+ [01;32mgrowpart[0m
+ [01;32mgrub-editenv[0m
+ [01;32mgrub-file[0m
+ [01;32mgrub-fstest[0m
+ [01;32mgrub-glue-efi[0m
+ [01;32mgrub-kbdcomp[0m
+ [01;32mgrub-menulst2cfg[0m
+ [01;32mgrub-mkfont[0m
+ [01;32mgrub-mkimage[0m
+ [01;32mgrub-mklayout[0m
+ [01;32mgrub-mknetdir[0m
+ [01;32mgrub-mkpasswd-pbkdf2[0m
+ [01;32mgrub-mkrelpath[0m
+ [01;32mgrub-mkrescue[0m
+ [01;32mgrub-mkstandalone[0m
+ [01;32mgrub-mount[0m
+ [01;36mgrub-ntldr-img[0m
+ [01;32mgrub-render-label[0m
+ [01;32mgrub-script-check[0m
+ [01;32mgrub-syslinux2cfg[0m
+ [01;32mgs[0m
+ [01;32mgsbj[0m
+ [01;32mgsdj[0m
+ [01;32mgsdj500[0m
+ [01;32mgsettings[0m
+ [01;32mgsftopk[0m
+ [01;32mgslj[0m
+ [01;32mgslp[0m
+ [01;32mgsnd[0m
+ [01;32mgst-device-monitor-1.0[0m
+ [01;32mgst-discoverer-1.0[0m
+ [01;32mgst-inspect-1.0[0m
+ [01;32mgst-launch-1.0[0m
+ [01;32mgst-play-1.0[0m
+ [01;36mgstreamer-codec-install[0m
+ [01;32mgst-stats-1.0[0m
+ [01;32mgst-tester-1.0[0m
+ [01;32mgst-typefind-1.0[0m
+ [01;36mgtbl[0m
+ [01;32mgtf[0m
+ [01;32mgtk4-builder-tool[0m
+ [01;32mgtk4-encode-symbolic-svg[0m
+ [01;32mgtk4-launch[0m
+ [01;32mgtk4-query-settings[0m
+ [01;32mgtk4-update-icon-cache[0m
+ [01;32mgtk-builder-tool[0m
+ [01;32mgtk-encode-symbolic-svg[0m
+ [01;32mgtk-launch[0m
+ [01;32mgtk-query-settings[0m
+ [01;32mgtk-update-icon-cache[0m
+ [01;32mgts2dxf[0m
+ [01;32mgts2oogl[0m
+ [01;32mgts2stl[0m
+ [01;32mgts2xyz[0m
+ [01;32mgtscheck[0m
+ [01;32mgtscompare[0m
+ [01;32mgts-config[0m
+ [01;32mgtstemplate[0m
+ [01;32mgunzip[0m
+ [01;32mgv2gml[0m
+ [01;36mgv2gxl[0m
+ [01;32mgvcolor[0m
+ [01;32mgvgen[0m
+ [01;32mgvmap[0m
+ [01;32mgvmap.sh[0m
+ [01;32mgvpack[0m
+ [01;32mgvpr[0m
+ [01;36mgxl2dot[0m
+ [01;32mgxl2gv[0m
+ [01;32mgzexe[0m
+ [01;32mgzip[0m
+ [01;32mh2ph[0m
+ [01;32mh2xs[0m
+ [01;32mhardlink[0m
+ [01;32mhbpldecode[0m
+ [01;32mhciattach[0m
+ [01;32mhciconfig[0m
+ [01;32mhcitool[0m
+ [01;36mhd[0m
+ [01;32mhead[0m
+ [01;36mHEAD[0m
+ [01;32mhelpztags[0m
+ [01;32mhex2hcd[0m
+ [01;32mhexdump[0m
+ [01;32mhipercdecode[0m
+ [01;32mhipstopgm[0m
+ [01;32mhost[0m
+ [01;32mhostid[0m
+ [01;32mhostname[0m
+ [01;32mhostnamectl[0m
+ [01;36mhp-align[0m
+ [01;36mhp-check[0m
+ [01;36mhp-clean[0m
+ [01;36mhp-colorcal[0m
+ [01;36mhp-config_usb_printer[0m
+ [01;36mhp-doctor[0m
+ [01;36mhp-firmware[0m
+ [01;36mhp-info[0m
+ [01;36mhp-levels[0m
+ [01;36mhp-logcapture[0m
+ [01;36mhp-makeuri[0m
+ [01;36mhp-pkservice[0m
+ [01;36mhp-plugin[0m
+ [01;32mhp-plugin-ubuntu[0m
+ [01;36mhp-probe[0m
+ [01;36mhp-query[0m
+ [01;36mhp-scan[0m
+ [01;36mhp-setup[0m
+ [01;36mhp-testpage[0m
+ [01;36mhp-timedate[0m
+ [01;32mhtop[0m
+ [01;32mhwe-support-status[0m
+ [01;36mi386[0m
+ [01;32mibus[0m
+ [01;32mibus-daemon[0m
+ [01;32mibus-setup[0m
+ [01;32mibus-table-createdb[0m
+ [01;32miceauth[0m
+ [01;32mico[0m
+ [01;32micontopbm[0m
+ [01;32miconv[0m
+ [01;32mid[0m
+ [01;36midentify[0m
+ [01;36midentify-im6[0m
+ [01;32midentify-im6.q16[0m
+ [01;32miecset[0m
+ [01;32mijs_pxljr[0m
+ [01;32milbmtoppm[0m
+ [01;32mimagetops[0m
+ [01;32mim-config[0m
+ [01;32mimg2sixel[0m
+ [01;32mimg2txt[0m
+ [01;32mimgtoppm[0m
+ [01;32mim-launch[0m
+ [01;36mimport[0m
+ [01;36mimport-im6[0m
+ [01;32mimport-im6.q16[0m
+ [01;32minfo[0m
+ [01;36minfobrowser[0m
+ [01;32minfocmp[0m
+ [01;36minfotocap[0m
+ [01;36minimf[0m
+ [01;36minitex[0m
+ [01;32minkscape[0m
+ [01;32minkview[0m
+ [01;32minputattach[0m
+ [01;32minstall[0m
+ [01;32minstall-info[0m
+ [01;32minstall-printerdriver[0m
+ [01;32minstmodsh[0m
+ [01;32mintel-virtual-output[0m
+ [01;32mionice[0m
+ [01;32mip[0m
+ [01;32mipcmk[0m
+ [01;32mipcrm[0m
+ [01;32mipcs[0m
+ [01;32mipod-read-sysinfo-extended[0m
+ [01;32mipod-time-sync[0m
+ [01;32mippfind[0m
+ [01;32mipptool[0m
+ [01;36miptables-xml[0m
+ [01;36mirb[0m
+ [01;32mirb3.0[0m
+ [01;32mischroot[0m
+ [01;36miscsiadm[0m
+ [01;32misdv4-serial-debugger[0m
+ [01;32misdv4-serial-inputattach[0m
+ [01;32misodump[0m
+ [01;32misoinfo[0m
+ [01;32misovfy[0m
+ [01;32mispell-wrapper[0m
+ [01;32mjoin[0m
+ [01;32mjoin-dctrl[0m
+ [01;32mjournalctl[0m
+ [01;32mjp2a[0m
+ [01;32mjpegtopnm[0m
+ [01;32mjpgicc[0m
+ [01;36mjsondiff[0m
+ [01;32mjsonpatch[0m
+ [01;32mjson-patch-jsondiff[0m
+ [01;32mjsonpointer[0m
+ [01;32mjson_pp[0m
+ [01;32mjsonschema[0m
+ [01;32mJxrDecApp[0m
+ [01;32mJxrEncApp[0m
+ [01;32mkbdinfo[0m
+ [01;32mkbd_mode[0m
+ [01;32mkbxutil[0m
+ [01;36mkeep-one-running[0m
+ [01;32mkernel-install[0m
+ [01;32mkerneloops-submit[0m
+ [01;32mkeyring[0m
+ [01;32mkill[0m
+ [01;32mkillall[0m
+ [01;32mkmod[0m
+ [01;32mkmodsign[0m
+ [01;32mkpseaccess[0m
+ [01;32mkpsereadlink[0m
+ [01;32mkpsestat[0m
+ [01;32mkpsewhich[0m
+ [01;32ml2ping[0m
+ [01;32ml2test[0m
+ [01;32mlandscape-sysinfo[0m
+ [01;32mlaptop-detect[0m
+ [01;32mlast[0m
+ [01;36mlastb[0m
+ [01;32mlastlog[0m
+ [01;32mlavadecode[0m
+ [01;32mlcf[0m
+ [01;36mld[0m
+ [01;36mldapadd[0m
+ [01;32mldapcompare[0m
+ [01;32mldapdelete[0m
+ [01;32mldapexop[0m
+ [01;32mldapmodify[0m
+ [01;32mldapmodrdn[0m
+ [01;32mldappasswd[0m
+ [01;32mldapsearch[0m
+ [01;32mldapurl[0m
+ [01;32mldapwhoami[0m
+ [01;36mld.bfd[0m
+ [01;32mldd[0m
+ [01;36mld.gold[0m
+ [01;32mleaftoppm[0m
+ [01;32mlefty[0m
+ [01;32mless[0m
+ [01;32mlessecho[0m
+ [01;36mlessfile[0m
+ [01;32mlesskey[0m
+ [01;32mlesspipe[0m
+ [01;32mlexgrog[0m
+ [01;32mlibnetcfg[0m
+ [01;36mlibreoffice[0m
+ [01;32mlibsixel-config[0m
+ [01;32mlibwacom-list-devices[0m
+ [01;32mlibwacom-list-local-devices[0m
+ [01;32mlibwacom-show-stylus[0m
+ [01;32mlibwacom-update-db[0m
+ [01;32mlink[0m
+ [01;32mlinkicc[0m
+ [01;36mlinux32[0m
+ [01;36mlinux64[0m
+ [01;32mlinux-boot-prober[0m
+ [01;32mlinux-check-removal[0m
+ [01;32mlinux-update-symlinks[0m
+ [01;32mlinux-version[0m
+ [01;32mlispmtopgm[0m
+ [01;32mlistres[0m
+ [01;32mln[0m
+ [01;32mlneato[0m
+ [01;32mlnstat[0m
+ [01;32mloadkeys[0m
+ [01;32mloadunimap[0m
+ [01;32mlocalc[0m
+ [01;32mlocale[0m
+ [01;32mlocale-check[0m
+ [01;32mlocalectl[0m
+ [01;32mlocaledef[0m
+ [01;36mlocate[0m
+ [01;32mlodraw[0m
+ [01;32mloffice[0m
+ [01;32mlofromtemplate[0m
+ [01;32mlogger[0m
+ [01;32mlogin[0m
+ [01;32mloginctl[0m
+ [01;32mlogname[0m
+ [01;32mloimpress[0m
+ [01;32mlomath[0m
+ [01;32mlook[0m
+ [01;32mloweb[0m
+ [01;32mlowntfs-3g[0m
+ [01;32mlowriter[0m
+ [01;32mlp[0m
+ [01;32mlpoptions[0m
+ [01;32mlpq[0m
+ [01;32mlpr[0m
+ [01;32mlprm[0m
+ [01;32mlp_solve[0m
+ [01;32mlpstat[0m
+ [01;32mls[0m
+ [01;32mlsattr[0m
+ [01;32mlsblk[0m
+ [01;32mlsb_release[0m
+ [01;32mlscpu[0m
+ [01;32mlshw[0m
+ [01;32mlsinitramfs[0m
+ [01;32mlsipc[0m
+ [01;32mlslocks[0m
+ [01;32mlslogins[0m
+ [01;32mlsmem[0m
+ [01;36mlsmod[0m
+ [01;32mlsns[0m
+ [01;32mlsof[0m
+ [01;32mlspci[0m
+ [01;32mlspgpot[0m
+ [01;32mlsusb[0m
+ [01;36mlto-dump-11[0m
+ [01;36mlto-dump-12[0m
+ [01;32mluahbtex[0m
+ [01;32mluajithbtex[0m
+ [01;32mluajittex[0m
+ [01;32mluatex[0m
+ [01;32mluit[0m
+ [01;32mlwp-download[0m
+ [01;32mlwp-dump[0m
+ [01;32mlwp-mirror[0m
+ [01;32mlwp-request[0m
+ [01;36mlzcat[0m
+ [01;36mlzcmp[0m
+ [01;36mlzdiff[0m
+ [01;36mlzegrep[0m
+ [01;36mlzfgrep[0m
+ [01;36mlzgrep[0m
+ [01;36mlzless[0m
+ [01;36mlzma[0m
+ [01;32mlzmainfo[0m
+ [01;36mlzmore[0m
+ [01;32mm17n-db[0m
+ [01;32mm2300w[0m
+ [01;32mm2300w-wrapper[0m
+ [01;32mm2400w[0m
+ [01;32mmacptopbm[0m
+ [01;32mmag[0m
+ [01;32mmailmail3[0m
+ [01;32mmake[0m
+ [01;32mmake-first-existing-target[0m
+ [01;32mmakeindex[0m
+ [01;32mmakejvf[0m
+ [01;32mmako-render[0m
+ [01;32mman[0m
+ [01;32mmandb[0m
+ [01;32mmanifest[0m
+ [01;32mmanpath[0m
+ [01;32mman-recode[0m
+ [01;32mmapscrn[0m
+ [01;32mmawk[0m
+ [01;32mmcookie[0m
+ [01;32mmd5sum[0m
+ [01;36mmd5sum.textutils[0m
+ [01;32mmdatopbm[0m
+ [01;32mmdig[0m
+ [01;32mmemusage[0m
+ [01;32mmemusagestat[0m
+ [01;32mmendex[0m
+ [01;32mmesa-overlay-control.py[0m
+ [01;32mmesg[0m
+ [01;32mmf[0m
+ [01;32mmflua[0m
+ [01;32mmfluajit[0m
+ [01;36mmfluajit-nowin[0m
+ [01;36mmflua-nowin[0m
+ [01;32mmf-nowin[0m
+ [01;36mmfplain[0m
+ [01;32mmft[0m
+ [01;32mmgrtopbm[0m
+ [01;32mmigrate-pubring-from-classic-gpg[0m
+ [01;32mmimeopen[0m
+ [01;32mmimetype[0m
+ [01;32mmin12xxw[0m
+ [01;32mmingle[0m
+ [01;32mmkdir[0m
+ [01;32mmkfifo[0m
+ [01;32mmkfontdir[0m
+ [01;32mmkfontscale[0m
+ [01;32mmkindex[0m
+ [01;36mmkisofs[0m
+ [01;32mmk_modmap[0m
+ [01;32mmknod[0m
+ [01;32mmkocp[0m
+ [01;32mmkofm[0m
+ [01;32mmksquashfs[0m
+ [01;32mmktemp[0m
+ [01;36mmktexfmt[0m
+ [01;36mmktexlsr[0m
+ [01;36mmktexmf[0m
+ [01;36mmktexpk[0m
+ [01;36mmktextfm[0m
+ [01;32mmkzftree[0m
+ [01;32mmm2gv[0m
+ [01;32mmmcli[0m
+ [01;36mmogrify[0m
+ [01;36mmogrify-im6[0m
+ [01;32mmogrify-im6.q16[0m
+ [01;32mmonitor-sensor[0m
+ [01;36mmontage[0m
+ [01;36mmontage-im6[0m
+ [01;32mmontage-im6.q16[0m
+ [01;32mmore[0m
+ [37;41mmount[0m
+ [01;32mmountpoint[0m
+ [01;32mmousetweaks[0m
+ [01;32mmpost[0m
+ [01;32mmscompress[0m
+ [01;32mmsexpand[0m
+ [01;32mmsxlint[0m
+ [01;36mmt[0m
+ [01;32mmt-gnu[0m
+ [01;32mmtr[0m
+ [01;32mmtrace[0m
+ [01;32mmtr-packet[0m
+ [01;32mmtvtoppm[0m
+ [01;32mmuffin[0m
+ [01;32mmuffin-message[0m
+ [01;32mmuffin-theme-viewer[0m
+ [01;32mmuffin-window-demo[0m
+ [01;32mmv[0m
+ [01;32mnamei[0m
+ [01;32mnano[0m
+ [01;32mnautilus[0m
+ [01;32mnautilus-autorun-software[0m
+ [01;32mnautilus-sendto[0m
+ [01;36mnawk[0m
+ [01;36mnc[0m
+ [01;32mncal[0m
+ [01;32mnc.openbsd[0m
+ [01;36mneato[0m
+ [01;32mneofetch[0m
+ [01;32mneotoppm[0m
+ [01;32mneqn[0m
+ [01;36mnetcat[0m
+ [01;32mnetkit-ntalk[0m
+ [01;32mnetworkctl[0m
+ [01;32mnetworkd-dispatcher[0m
+ [37;41mnewgrp[0m
+ [01;36mNF[0m
+ [01;32mngettext[0m
+ [01;32mnice[0m
+ [01;36mnisdomainname[0m
+ [01;32mnl[0m
+ [01;36mnm[0m
+ [01;32mnm-applet[0m
+ [01;32mnmcli[0m
+ [01;32mnm-connection-editor[0m
+ [01;32mnm-online[0m
+ [01;32mnmtui[0m
+ [01;36mnmtui-connect[0m
+ [01;36mnmtui-edit[0m
+ [01;36mnmtui-hostname[0m
+ [01;32mnohup[0m
+ [01;32mnop[0m
+ [01;32mnotify-send[0m
+ [01;32mnproc[0m
+ [01;32mnroff[0m
+ [01;32mnsenter[0m
+ [01;32mnslookup[0m
+ [01;32mnstat[0m
+ [01;32mnsupdate[0m
+ [01;32mntfs-3g[0m
+ [01;32mntfs-3g.probe[0m
+ [01;32mntfscat[0m
+ [01;32mntfscluster[0m
+ [01;32mntfscmp[0m
+ [01;32mntfsdecrypt[0m
+ [01;32mntfsfallocate[0m
+ [01;32mntfsfix[0m
+ [01;32mntfsinfo[0m
+ [01;32mntfsls[0m
+ [01;32mntfsmove[0m
+ [01;32mntfsrecover[0m
+ [01;32mntfssecaudit[0m
+ [01;32mntfstruncate[0m
+ [01;32mntfsusermap[0m
+ [01;32mntfswipe[0m
+ [01;32mnumfmt[0m
+ [01;32mnvidia-detector[0m
+ [01;32mnvim[0m
+ [01;32moakdecode[0m
+ [01;32mobexctl[0m
+ [01;36mobjcopy[0m
+ [01;36mobjdump[0m
+ [01;32moclock[0m
+ [01;32mod[0m
+ [01;32modvicopy[0m
+ [01;32modvitype[0m
+ [01;32moem-getlogs[0m
+ [01;36mofm2opl[0m
+ [01;32momfonts[0m
+ [01;36mon_ac_power[0m
+ [01;32moomctl[0m
+ [01;36mopen[0m
+ [01;32mopenssl[0m
+ [01;32mopenvt[0m
+ [01;36mopl2ofm[0m
+ [01;32mopldecode[0m
+ [01;32morca[0m
+ [01;32morca-dm-wrapper[0m
+ [01;36mosage[0m
+ [01;32mos-prober[0m
+ [01;32motangle[0m
+ [01;32motp2ocp[0m
+ [01;32moutocp[0m
+ [01;36movf2ovp[0m
+ [01;36movp2ovf[0m
+ [01;32mp11-kit[0m
+ [01;32mpacat[0m
+ [01;32mpacman4consoleedit[0m
+ [01;32mpacmd[0m
+ [01;32mpactl[0m
+ [01;32mpadsp[0m
+ [01;36mpager[0m
+ [01;32mpa-info[0m
+ [01;32mpalmtopnm[0m
+ [01;32mpamcut[0m
+ [01;32mpamdeinterlace[0m
+ [01;32mpamdice[0m
+ [01;32mpamfile[0m
+ [01;32mpamoil[0m
+ [01;36mpamon[0m
+ [01;32mpamstack[0m
+ [01;32mpamstretch[0m
+ [01;32mpamstretch-gen[0m
+ [01;32mpaperconf[0m
+ [01;36mpaplay[0m
+ [01;36mparec[0m
+ [01;36mparecord[0m
+ [01;32mpartx[0m
+ [37;41mpasswd[0m
+ [01;32mpaste[0m
+ [01;32mpastebinit[0m
+ [01;36mpasteurize[0m
+ [01;32mpasuspender[0m
+ [01;32mpatch[0m
+ [01;36mpatchwork[0m
+ [01;32mpatgen[0m
+ [01;32mpathchk[0m
+ [01;32mpax11publish[0m
+ [01;36mpbget[0m
+ [01;32mpbibtex[0m
+ [01;32mpbmclean[0m
+ [01;32mpbmlife[0m
+ [01;32mpbmmake[0m
+ [01;32mpbmmask[0m
+ [01;32mpbmpage[0m
+ [01;32mpbmpscale[0m
+ [01;32mpbmreduce[0m
+ [01;32mpbmtext[0m
+ [01;32mpbmtextps[0m
+ [01;32mpbmto10x[0m
+ [01;32mpbmtoascii[0m
+ [01;32mpbmtoatk[0m
+ [01;32mpbmtobbnbg[0m
+ [01;32mpbmtocmuwm[0m
+ [01;32mpbmtoepsi[0m
+ [01;32mpbmtoepson[0m
+ [01;32mpbmtog3[0m
+ [01;32mpbmtogem[0m
+ [01;32mpbmtogo[0m
+ [01;32mpbmtoicon[0m
+ [01;32mpbmtolj[0m
+ [01;32mpbmtomacp[0m
+ [01;32mpbmtomda[0m
+ [01;32mpbmtomgr[0m
+ [01;32mpbmtonokia[0m
+ [01;32mpbmtopgm[0m
+ [01;32mpbmtopi3[0m
+ [01;32mpbmtoplot[0m
+ [01;32mpbmtoppa[0m
+ [01;32mpbmtopsg3[0m
+ [01;32mpbmtoptx[0m
+ [01;32mpbmtowbmp[0m
+ [01;32mpbmtox10bm[0m
+ [01;32mpbmtoxbm[0m
+ [01;32mpbmtoybm[0m
+ [01;32mpbmtozinc[0m
+ [01;32mpbmupc[0m
+ [01;32mpbput[0m
+ [01;36mpbputs[0m
+ [01;32mpcxtoppm[0m
+ [01;36mpdb3[0m
+ [01;36mpdb3.10[0m
+ [01;32mpdf2dsc[0m
+ [01;32mpdf2ps[0m
+ [01;32mpdfattach[0m
+ [01;32mpdfclose[0m
+ [01;32mpdfdetach[0m
+ [01;36mpdfetex[0m
+ [01;32mpdffonts[0m
+ [01;32mpdfimages[0m
+ [01;32mpdfinfo[0m
+ [01;32mpdfopen[0m
+ [01;32mpdfseparate[0m
+ [01;32mpdfsig[0m
+ [01;32mpdftex[0m
+ [01;32mpdftocairo[0m
+ [01;32mpdftohtml[0m
+ [01;32mpdftoppm[0m
+ [01;32mpdftops[0m
+ [01;32mpdftosrc[0m
+ [01;32mpdftotext[0m
+ [01;32mpdfunite[0m
+ [01;36mpdvitomp[0m
+ [01;32mpdvitype[0m
+ [01;32mpeekfd[0m
+ [01;32mperl[0m
+ [01;32mperl5.34.0[0m
+ [01;32mperl5.34-x86_64-linux-gnu[0m
+ [01;32mperlbug[0m
+ [01;32mperldoc[0m
+ [01;32mperli11ndoc[0m
+ [01;32mperlivp[0m
+ [01;32mperlthanks[0m
+ [01;32mpf2afm[0m
+ [01;32mpfb2pfa[0m
+ [01;32mpfbtopfa[0m
+ [01;32mpgmbentley[0m
+ [01;32mpgmcrater[0m
+ [01;32mpgmedge[0m
+ [01;32mpgmenhance[0m
+ [01;32mpgmhist[0m
+ [01;32mpgmkernel[0m
+ [01;32mpgmnoise[0m
+ [01;36mpgmnorm[0m
+ [01;36mpgmoil[0m
+ [01;32mpgmramp[0m
+ [01;32mpgmslice[0m
+ [01;32mpgmtexture[0m
+ [01;32mpgmtofs[0m
+ [01;32mpgmtolispm[0m
+ [01;32mpgmtopbm[0m
+ [01;32mpgmtoppm[0m
+ [01;32mpgrep[0m
+ [01;32mpi1toppm[0m
+ [01;32mpi3topbm[0m
+ [01;32mpic[0m
+ [01;32mpic2tpic[0m
+ [01;36mpico[0m
+ [01;32mpiconv[0m
+ [01;36mpidof[0m
+ [01;32mpidwait[0m
+ [01;36mpinentry[0m
+ [01;32mpinentry-curses[0m
+ [01;32mpinentry-gnome3[0m
+ [01;36mpinentry-x11[0m
+ [01;32mping[0m
+ [01;36mping4[0m
+ [01;36mping6[0m
+ [01;32mpinky[0m
+ [01;32mpipewire[0m
+ [01;32mpipewire-media-session[0m
+ [01;32mpjtoppm[0m
+ [01;32mpk2bm[0m
+ [01;32mpkaction[0m
+ [01;32mpkcheck[0m
+ [01;32mpkcon[0m
+ [37;41mpkexec[0m
+ [01;36mpkill[0m
+ [01;32mpkmon[0m
+ [01;32mpktogf[0m
+ [01;32mpkttyagent[0m
+ [01;32mpktype[0m
+ [01;32mpl2pm[0m
+ [01;32mpldd[0m
+ [30;43mplocate[0m
+ [01;32mplog[0m
+ [01;32mpltotf[0m
+ [01;32mplymouth[0m
+ [01;32mpmap[0m
+ [01;32mpmpost[0m
+ [01;32mpmxab[0m
+ [01;32mpngtopnm[0m
+ [01;32mpnm2ppa[0m
+ [01;32mpnmalias[0m
+ [01;32mpnmarith[0m
+ [01;32mpnmcat[0m
+ [01;32mpnmcolormap[0m
+ [01;32mpnmcomp[0m
+ [01;32mpnmconvol[0m
+ [01;32mpnmcrop[0m
+ [01;32mpnmcut[0m
+ [01;32mpnmdepth[0m
+ [01;32mpnmenlarge[0m
+ [01;32mpnmfile[0m
+ [01;32mpnmflip[0m
+ [01;32mpnmgamma[0m
+ [01;32mpnmhisteq[0m
+ [01;32mpnmhistmap[0m
+ [01;32mpnmindex[0m
+ [01;36mpnminterp[0m
+ [01;36mpnminterp-gen[0m
+ [01;32mpnminvert[0m
+ [01;32mpnmmargin[0m
+ [01;32mpnmmontage[0m
+ [01;32mpnmnlfilt[0m
+ [01;36mpnmnoraw[0m
+ [01;32mpnmnorm[0m
+ [01;32mpnmpad[0m
+ [01;32mpnmpaste[0m
+ [01;32mpnmpsnr[0m
+ [01;32mpnmquant[0m
+ [01;32mpnmremap[0m
+ [01;32mpnmrotate[0m
+ [01;32mpnmscale[0m
+ [01;32mpnmscalefixed[0m
+ [01;32mpnmshear[0m
+ [01;32mpnmsmooth[0m
+ [01;32mpnmsplit[0m
+ [01;32mpnmtile[0m
+ [01;32mpnmtoddif[0m
+ [01;32mpnmtofiasco[0m
+ [01;32mpnmtofits[0m
+ [01;32mpnmtojpeg[0m
+ [01;32mpnmtopalm[0m
+ [01;32mpnmtoplainpnm[0m
+ [01;32mpnmtopng[0m
+ [01;32mpnmtops[0m
+ [01;32mpnmtorast[0m
+ [01;32mpnmtorle[0m
+ [01;32mpnmtosgi[0m
+ [01;32mpnmtosir[0m
+ [01;32mpnmtotiff[0m
+ [01;32mpnmtotiffcmyk[0m
+ [01;32mpnmtoxwd[0m
+ [01;32mpod2html[0m
+ [01;32mpod2man[0m
+ [01;32mpod2text[0m
+ [01;32mpod2usage[0m
+ [01;32mpodchecker[0m
+ [01;32mpoff[0m
+ [01;32mpollinate[0m
+ [01;32mpon[0m
+ [01;32mpooltype[0m
+ [01;36mPOST[0m
+ [01;32mpowerprofilesctl[0m
+ [01;32mppdc[0m
+ [01;32mppdhtml[0m
+ [01;32mppdi[0m
+ [01;32mppdmerge[0m
+ [01;32mppdpo[0m
+ [01;32mpphs[0m
+ [01;32mppltotf[0m
+ [01;32mppm3d[0m
+ [01;32mppmbrighten[0m
+ [01;32mppmchange[0m
+ [01;32mppmcie[0m
+ [01;32mppmcolormask[0m
+ [01;32mppmcolors[0m
+ [01;32mppmdim[0m
+ [01;32mppmdist[0m
+ [01;32mppmdither[0m
+ [01;32mppmfade[0m
+ [01;32mppmflash[0m
+ [01;32mppmforge[0m
+ [01;32mppmhist[0m
+ [01;32mppmlabel[0m
+ [01;32mppmmake[0m
+ [01;32mppmmix[0m
+ [01;36mppmnorm[0m
+ [01;32mppmntsc[0m
+ [01;32mppmpat[0m
+ [01;32mppmquant[0m
+ [01;32mppmquantall[0m
+ [01;32mppmqvga[0m
+ [01;32mppmrainbow[0m
+ [01;32mppmrelief[0m
+ [01;32mppmshadow[0m
+ [01;32mppmshift[0m
+ [01;32mppmspread[0m
+ [01;32mppmtoacad[0m
+ [01;32mppmtobmp[0m
+ [01;32mppmtoeyuv[0m
+ [01;32mppmtogif[0m
+ [01;32mppmtoicr[0m
+ [01;32mppmtoilbm[0m
+ [01;36mppmtojpeg[0m
+ [01;32mppmtoleaf[0m
+ [01;32mppmtolj[0m
+ [01;32mppmtomap[0m
+ [01;32mppmtomitsu[0m
+ [01;32mppmtompeg[0m
+ [01;32mppmtoneo[0m
+ [01;32mppmtopcx[0m
+ [01;32mppmtopgm[0m
+ [01;32mppmtopi1[0m
+ [01;32mppmtopict[0m
+ [01;32mppmtopj[0m
+ [01;32mppmtopuzz[0m
+ [01;32mppmtorgb3[0m
+ [01;32mppmtosixel[0m
+ [01;32mppmtotga[0m
+ [01;32mppmtouil[0m
+ [01;32mppmtowinicon[0m
+ [01;32mppmtoxpm[0m
+ [01;32mppmtoyuv[0m
+ [01;32mppmtoyuvsplit[0m
+ [01;32mppmtv[0m
+ [01;32mpr[0m
+ [01;32mprecat[0m
+ [01;32mpreconv[0m
+ [01;32mprepmx[0m
+ [01;32mpreunzip[0m
+ [01;32mprezip[0m
+ [01;32mprezip-bin[0m
+ [01;36mprint[0m
+ [01;32mprintafm[0m
+ [01;32mprintenv[0m
+ [01;32mprinter-profile[0m
+ [01;32mprintf[0m
+ [01;32mprlimit[0m
+ [01;36mpro[0m
+ [01;32mprove[0m
+ [01;32mprtstat[0m
+ [01;32mprune[0m
+ [01;32mps[0m
+ [01;32mps2ascii[0m
+ [01;32mps2epsi[0m
+ [01;32mps2pdf[0m
+ [01;32mps2pdf12[0m
+ [01;32mps2pdf13[0m
+ [01;32mps2pdf14[0m
+ [01;32mps2pdfwr[0m
+ [01;32mps2pk[0m
+ [01;32mps2ps[0m
+ [01;32mps2ps2[0m
+ [01;36mps2txt[0m
+ [01;36mpsfaddtable[0m
+ [01;36mpsfgettable[0m
+ [01;36mpsfstriptable[0m
+ [01;32mpsfxtable[0m
+ [01;32mpsicc[0m
+ [01;32mpsidtopgm[0m
+ [01;32mpslog[0m
+ [01;32mpstopnm[0m
+ [01;32mpstree[0m
+ [01;36mpstree.x11[0m
+ [01;32mptar[0m
+ [01;32mptardiff[0m
+ [01;32mptargrep[0m
+ [01;32mptex[0m
+ [01;32mptftopl[0m
+ [01;32mptx[0m
+ [01;32mpulseaudio[0m
+ [01;32mpurge-old-kernels[0m
+ [01;32mpw-cat[0m
+ [01;32mpw-cli[0m
+ [01;32mpwd[0m
+ [01;32mpw-dot[0m
+ [01;36mpw-dsdplay[0m
+ [01;32mpw-dump[0m
+ [01;32mpwdx[0m
+ [01;32mpw-link[0m
+ [01;32mpw-loopback[0m
+ [01;32mpw-metadata[0m
+ [01;32mpw-mididump[0m
+ [01;36mpw-midiplay[0m
+ [01;36mpw-midirecord[0m
+ [01;32mpw-mon[0m
+ [01;36mpw-play[0m
+ [01;32mpw-profiler[0m
+ [01;36mpw-record[0m
+ [01;32mpw-reserve[0m
+ [01;32mpw-top[0m
+ [01;32mpw-v4l2[0m
+ [01;32mpy3clean[0m
+ [01;32mpy3compile[0m
+ [01;36mpy3versions[0m
+ [01;36mpybabel[0m
+ [01;32mpybabel-python3[0m
+ [01;36mpydoc3[0m
+ [01;32mpydoc3.10[0m
+ [01;36mpygettext3[0m
+ [01;32mpygettext3.10[0m
+ [01;32mpyhtmlizer3[0m
+ [01;32mpyserial-miniterm[0m
+ [01;32mpyserial-ports[0m
+ [01;36mpython3[0m
+ [01;32mpython3.10[0m
+ [01;32mpython3-futurize[0m
+ [01;32mpython3-pasteurize[0m
+ [01;32mpzstd[0m
+ [01;32mqpdldecode[0m
+ [01;32mqrttoppm[0m
+ [01;32mquirks-handler[0m
+ [01;32mracc3.0[0m
+ [01;32mrake[0m
+ [01;32mrake3.0[0m
+ [01;36mranlib[0m
+ [01;32mrasttopnm[0m
+ [01;32mrawtopgm[0m
+ [01;32mrawtoppm[0m
+ [01;36mrbash[0m
+ [01;32mrbs3.0[0m
+ [01;36mrcp[0m
+ [01;32mrctest[0m
+ [01;32mrdiffdir[0m
+ [01;32mrdma[0m
+ [01;36mrdoc[0m
+ [01;32mrdoc3.0[0m
+ [01;36mreadelf[0m
+ [01;32mreadlink[0m
+ [01;32mrealpath[0m
+ [01;32mred[0m
+ [01;32mremmina[0m
+ [01;32mremmina-file-wrapper[0m
+ [01;32mremmina-gnome[0m
+ [01;32mrendercheck[0m
+ [01;32mrenice[0m
+ [01;32mrescan-scsi-bus.sh[0m
+ [01;36mreset[0m
+ [01;32mresizecons[0m
+ [01;32mresizepart[0m
+ [01;32mresolvectl[0m
+ [01;32mrev[0m
+ [01;32mrfcomm[0m
+ [01;32mrgb3toppm[0m
+ [01;32mrgrep[0m
+ [01;32mrhythmbox[0m
+ [01;32mrhythmbox-client[0m
+ [01;36mri[0m
+ [01;32mri3.0[0m
+ [01;32mrletopnm[0m
+ [01;36mrlogin[0m
+ [01;32mrm[0m
+ [01;32mrmdir[0m
+ [01;36mr-mpost[0m
+ [01;36mrnano[0m
+ [01;32mroutef[0m
+ [01;32mroutel[0m
+ [01;32mrpcgen[0m
+ [01;32mrpm[0m
+ [01;32mrpm2archive[0m
+ [01;32mrpm2cpio[0m
+ [01;32mrpmbuild[0m
+ [01;32mrpmdb[0m
+ [01;32mrpmgraph[0m
+ [01;32mrpmkeys[0m
+ [01;36mr-pmpost[0m
+ [01;36mrpmquery[0m
+ [01;32mrpmsign[0m
+ [01;32mrpmspec[0m
+ [01;36mrpmverify[0m
+ [01;32mrrsync[0m
+ [01;36mrsh[0m
+ [01;32mrstart[0m
+ [01;32mrstartd[0m
+ [01;32mrsync[0m
+ [01;32mrsync-ssl[0m
+ [01;36mrtstat[0m
+ [01;36mruby[0m
+ [01;32mruby3.0[0m
+ [01;32mruncon[0m
+ [01;36mrungs[0m
+ [01;32mrun-mailcap[0m
+ [01;32mrun-one[0m
+ [01;36mrun-one-constantly[0m
+ [01;36mrun-one-until-failure[0m
+ [01;36mrun-one-until-success[0m
+ [01;32mrun-parts[0m
+ [01;36mrun-this-one[0m
+ [01;32mrun-with-aspell[0m
+ [01;36mr-upmpost[0m
+ [01;36mrview[0m
+ [01;36mrvim[0m
+ [01;32mrygel[0m
+ [01;32msane-find-scanner[0m
+ [01;32msavelog[0m
+ [01;32msbattach[0m
+ [01;32msbigtopgm[0m
+ [01;32msbkeysync[0m
+ [01;32msbsiglist[0m
+ [01;32msbsign[0m
+ [01;32msbvarsign[0m
+ [01;32msbverify[0m
+ [01;32mscandeps[0m
+ [01;32mscanimage[0m
+ [01;32msccmap[0m
+ [01;32mscor2prt[0m
+ [01;32mscp[0m
+ [01;32mscp-dbus-service[0m
+ [01;32mscreen[0m
+ [01;32mscreendump[0m
+ [01;32mscript[0m
+ [01;32mscriptlive[0m
+ [01;32mscriptreplay[0m
+ [01;32mscsi_logging_level[0m
+ [01;32mscsi_mandat[0m
+ [01;32mscsi_readcap[0m
+ [01;32mscsi_ready[0m
+ [01;32mscsi_satl[0m
+ [01;32mscsi_start[0m
+ [01;32mscsi_stop[0m
+ [01;32mscsi_temperature[0m
+ [01;32msdiff[0m
+ [01;32msdptool[0m
+ [01;32mseahorse[0m
+ [01;32msed[0m
+ [01;36msee[0m
+ [01;32mselect-default-iwrap[0m
+ [01;32mselect-editor[0m
+ [01;32msensible-browser[0m
+ [01;32msensible-editor[0m
+ [01;32msensible-pager[0m
+ [01;32msensors[0m
+ [01;32msensors-conf-convert[0m
+ [01;32msepdebugcrcfix[0m
+ [01;32mseq[0m
+ [01;32msession-migration[0m
+ [01;32msessreg[0m
+ [01;32msetarch[0m
+ [01;32msetfacl[0m
+ [01;32msetfont[0m
+ [01;32msetkeycodes[0m
+ [01;32msetleds[0m
+ [01;32msetlogcons[0m
+ [01;32msetmetamode[0m
+ [01;32msetpci[0m
+ [01;32msetpriv[0m
+ [01;32msetsid[0m
+ [01;32msetterm[0m
+ [01;32msetupcon[0m
+ [01;32msetxkbmap[0m
+ [01;36msfdp[0m
+ [01;32msftp[0m
+ [01;36msg[0m
+ [01;32msg_bg_ctl[0m
+ [01;32msg_compare_and_write[0m
+ [01;32msg_copy_results[0m
+ [01;32msg_dd[0m
+ [01;32msg_decode_sense[0m
+ [01;32msg_emc_trespass[0m
+ [01;32msg_format[0m
+ [01;32msg_get_config[0m
+ [01;32msg_get_elem_status[0m
+ [01;32msg_get_lba_status[0m
+ [01;32msg_ident[0m
+ [01;32msginfo[0m
+ [01;32msg_inq[0m
+ [01;32msgitopnm[0m
+ [01;32msg_logs[0m
+ [01;32msg_luns[0m
+ [01;32msg_map[0m
+ [01;32msg_map26[0m
+ [01;32msgm_dd[0m
+ [01;32msg_modes[0m
+ [01;32msg_opcodes[0m
+ [01;32msgp_dd[0m
+ [01;32msg_persist[0m
+ [01;32msg_prevent[0m
+ [01;32msg_raw[0m
+ [01;32msg_rbuf[0m
+ [01;32msg_rdac[0m
+ [01;32msg_read[0m
+ [01;32msg_read_attr[0m
+ [01;32msg_read_block_limits[0m
+ [01;32msg_read_buffer[0m
+ [01;32msg_readcap[0m
+ [01;32msg_read_long[0m
+ [01;32msg_reassign[0m
+ [01;32msg_referrals[0m
+ [01;32msg_rep_pip[0m
+ [01;32msg_rep_zones[0m
+ [01;32msg_requests[0m
+ [01;32msg_reset[0m
+ [01;32msg_reset_wp[0m
+ [01;32msg_rmsn[0m
+ [01;32msg_rtpg[0m
+ [01;32msg_safte[0m
+ [01;32msg_sanitize[0m
+ [01;32msg_sat_identify[0m
+ [01;32msg_sat_phy_event[0m
+ [01;32msg_sat_read_gplog[0m
+ [01;32msg_sat_set_features[0m
+ [01;32msg_scan[0m
+ [01;32msg_seek[0m
+ [01;32msg_senddiag[0m
+ [01;32msg_ses[0m
+ [01;32msg_ses_microcode[0m
+ [01;32msg_start[0m
+ [01;32msg_stpg[0m
+ [01;32msg_stream_ctl[0m
+ [01;32msg_sync[0m
+ [01;32msg_test_rwbuf[0m
+ [01;32msg_timestamp[0m
+ [01;32msg_turs[0m
+ [01;32msg_unmap[0m
+ [01;32msg_verify[0m
+ [01;32msg_vpd[0m
+ [01;32msg_write_buffer[0m
+ [01;32msg_write_long[0m
+ [01;32msg_write_same[0m
+ [01;32msg_write_verify[0m
+ [01;32msg_write_x[0m
+ [01;32msg_wr_mode[0m
+ [01;32msg_xcopy[0m
+ [01;32msg_zone[0m
+ [01;36msh[0m
+ [01;32msha1sum[0m
+ [01;32msha224sum[0m
+ [01;32msha256sum[0m
+ [01;32msha384sum[0m
+ [01;32msha512sum[0m
+ [01;32mshasum[0m
+ [01;32mshotwell[0m
+ [01;32mshowconsolefont[0m
+ [01;32mshowkey[0m
+ [01;32mshowrgb[0m
+ [01;32mshred[0m
+ [01;32mshuf[0m
+ [01;36msimpdftex[0m
+ [01;32msimple-scan[0m
+ [01;32msirtopnm[0m
+ [01;32msixel2png[0m
+ [01;36msize[0m
+ [01;32mskill[0m
+ [01;32mslabtop[0m
+ [01;32msldtoppm[0m
+ [01;32msleep[0m
+ [01;36mslogin[0m
+ [01;32mslxdecode[0m
+ [01;32msmproxy[0m
+ [01;32msnap[0m
+ [01;36msnapctl[0m
+ [01;32msnapfuse[0m
+ [01;36msnice[0m
+ [01;32msoelim[0m
+ [01;36msoffice[0m
+ [01;32msoftware-properties-gtk[0m
+ [01;32msort[0m
+ [01;32msort-dctrl[0m
+ [01;32msos[0m
+ [01;32msos-collector[0m
+ [01;32msosreport[0m
+ [01;32msotruss[0m
+ [01;32mspa-acp-tool[0m
+ [01;32mspa-inspect[0m
+ [01;32mspa-json-dump[0m
+ [01;32mspa-monitor[0m
+ [01;32mspa-resample[0m
+ [01;32mspctoppm[0m
+ [01;32mspd-conf[0m
+ [01;32mspd-say[0m
+ [01;32mspdsend[0m
+ [01;32mspeaker-test[0m
+ [01;32mspeech-dispatcher[0m
+ [01;32mspice-vdagent[0m
+ [01;32msplain[0m
+ [01;32msplit[0m
+ [01;32msplitfont[0m
+ [01;32msprof[0m
+ [01;32msputoppm[0m
+ [01;36msqfscat[0m
+ [01;36msqfstar[0m
+ [01;32mss[0m
+ [01;32mssh[0m
+ [01;32mssh-add[0m
+ [30;43mssh-agent[0m
+ [01;32mssh-argv0[0m
+ [01;32mssh-copy-id[0m
+ [01;32mssh-import-id[0m
+ [01;32mssh-import-id-gh[0m
+ [01;32mssh-import-id-lp[0m
+ [01;32mssh-keygen[0m
+ [01;32mssh-keyscan[0m
+ [01;32msss_ssh_authorizedkeys[0m
+ [01;32msss_ssh_knownhostsproxy[0m
+ [01;32mst4topgm[0m
+ [01;32mstart-pulseaudio-x11[0m
+ [01;32mstartx[0m
+ [01;32mstat[0m
+ [01;36mstatic-sh[0m
+ [01;32mstdbuf[0m
+ [01;32mstl2gts[0m
+ [01;32mstrace[0m
+ [01;32mstrace-log-merge[0m
+ [01;36mstream[0m
+ [01;36mstream-im6[0m
+ [01;32mstream-im6.q16[0m
+ [01;32mstreamzip[0m
+ [01;32mstrfile[0m
+ [01;36mstrings[0m
+ [01;36mstrip[0m
+ [01;32mstty[0m
+ [37;41msu[0m
+ [37;41msudo[0m
+ [01;36msudoedit[0m
+ [01;32msudoreplay[0m
+ [01;32msum[0m
+ [01;32mswitcherooctl[0m
+ [01;32msynaptic-pkexec[0m
+ [01;32msync[0m
+ [01;32msynctex[0m
+ [01;32msystem-config-printer[0m
+ [01;32msystem-config-printer-applet[0m
+ [01;32msystemctl[0m
+ [01;36msystemd[0m
+ [01;32msystemd-analyze[0m
+ [01;32msystemd-ask-password[0m
+ [01;32msystemd-cat[0m
+ [01;32msystemd-cgls[0m
+ [01;32msystemd-cgtop[0m
+ [01;32msystemd-cryptenroll[0m
+ [01;32msystemd-delta[0m
+ [01;32msystemd-detect-virt[0m
+ [01;32msystemd-escape[0m
+ [01;32msystemd-hwdb[0m
+ [01;32msystemd-id128[0m
+ [01;32msystemd-inhibit[0m
+ [01;32msystemd-machine-id-setup[0m
+ [01;32msystemd-mount[0m
+ [01;32msystemd-notify[0m
+ [01;32msystemd-path[0m
+ [01;32msystemd-run[0m
+ [01;32msystemd-socket-activate[0m
+ [01;32msystemd-stdio-bridge[0m
+ [01;32msystemd-sysext[0m
+ [01;32msystemd-sysusers[0m
+ [01;32msystemd-tmpfiles[0m
+ [01;32msystemd-tty-ask-password-agent[0m
+ [01;36msystemd-umount[0m
+ [01;32mt1ascii[0m
+ [01;32mt1asm[0m
+ [01;32mt1binary[0m
+ [01;32mt1disasm[0m
+ [01;32mt1mac[0m
+ [01;32mt1unmac[0m
+ [01;32mt4ht[0m
+ [01;32mtabs[0m
+ [01;32mtac[0m
+ [01;32mtail[0m
+ [01;36mtalk[0m
+ [01;32mtangle[0m
+ [01;32mtar[0m
+ [01;32mtaskset[0m
+ [01;32mtbl[0m
+ [01;32mtbl-dctrl[0m
+ [01;36mtclsh[0m
+ [01;32mtclsh8.6[0m
+ [01;32mtcpdump[0m
+ [01;32mtee[0m
+ [01;36mtelnet[0m
+ [01;32mtelnet.netkit[0m
+ [01;32mtempfile[0m
+ [01;32mtest[0m
+ [01;32mtex[0m
+ [01;32mtex2aspc[0m
+ [01;32mtex4ht[0m
+ [01;36mtexdoc[0m
+ [01;36mtexdoctk[0m
+ [01;36mtexhash[0m
+ [01;36mtexlua[0m
+ [01;36mtexluac[0m
+ [01;36mtexluajit[0m
+ [01;36mtexluajitc[0m
+ [01;32mtftopl[0m
+ [01;32mtgatoppm[0m
+ [01;32mthinkjettopbm[0m
+ [01;36mthunderbird[0m
+ [01;32mtic[0m
+ [01;32mtie[0m
+ [01;32mtifftopnm[0m
+ [01;32mtificc[0m
+ [01;32mtilix[0m
+ [01;32mtilix.wrapper[0m
+ [01;32mtime[0m
+ [01;32mtimedatectl[0m
+ [01;32mtimeout[0m
+ [01;32mtkconch3[0m
+ [01;36mtlmgr[0m
+ [01;32mtload[0m
+ [01;32mtl-paper[0m
+ [01;32mtmux[0m
+ [01;32mtnftp[0m
+ [01;32mtoe[0m
+ [01;32mtoilet[0m
+ [01;32mtop[0m
+ [01;32mtotem[0m
+ [01;32mtotem-video-thumbnailer[0m
+ [01;32mtouch[0m
+ [01;32mtpic2pdftex[0m
+ [01;32mtput[0m
+ [01;32mtr[0m
+ [01;32mtracepath[0m
+ [01;32mtracker3[0m
+ [01;32mtransfig[0m
+ [01;32mtransform[0m
+ [01;32mtransicc[0m
+ [01;32mtransmission-gtk[0m
+ [01;32mtransset[0m
+ [01;32mtred[0m
+ [01;32mtrial3[0m
+ [01;32mtroff[0m
+ [01;32mtrue[0m
+ [01;32mtruncate[0m
+ [01;32mtrust[0m
+ [01;32mtset[0m
+ [01;32mtsort[0m
+ [01;32mttf2afm[0m
+ [01;32mttf2pk[0m
+ [01;32mttf2tfm[0m
+ [01;32mttfdump[0m
+ [01;32mtty[0m
+ [01;32mtwist3[0m
+ [01;32mtwistd3[0m
+ [01;36mtwopi[0m
+ [01;32mtypeprof3.0[0m
+ [01;32mtzselect[0m
+ [01;36mua[0m
+ [01;32mubuntu-advantage[0m
+ [01;36mubuntu-bug[0m
+ [01;36mubuntu-core-launcher[0m
+ [01;32mubuntu-distro-info[0m
+ [01;32mubuntu-drivers[0m
+ [01;32mubuntu-report[0m
+ [01;32mubuntu-security-status[0m
+ [01;32mucf[0m
+ [01;32mucfq[0m
+ [01;32mucfr[0m
+ [01;32muclampset[0m
+ [01;32mucs2any[0m
+ [01;32mudevadm[0m
+ [01;32mudisksctl[0m
+ [01;32mul[0m
+ [01;32mumax_pp[0m
+ [37;41mumount[0m
+ [01;32muname[0m
+ [01;32munattended-upgrade[0m
+ [01;36munattended-upgrades[0m
+ [01;32muncompress[0m
+ [01;32munexpand[0m
+ [01;32munflatten[0m
+ [01;32municode_start[0m
+ [01;32municode_stop[0m
+ [01;32muniq[0m
+ [01;32munity-scope-loader[0m
+ [01;36munity-settings-daemon[0m
+ [01;32munlink[0m
+ [01;36munlzma[0m
+ [01;32munmkinitramfs[0m
+ [01;32munopkg[0m
+ [01;32munshare[0m
+ [01;32munsquashfs[0m
+ [01;32munstr[0m
+ [01;36munxz[0m
+ [01;32munzip[0m
+ [01;32munzipsfx[0m
+ [01;36munzstd[0m
+ [01;32mupbibtex[0m
+ [01;32mupdate-alternatives[0m
+ [01;36mupdatedb[0m
+ [01;32mupdate-desktop-database[0m
+ [01;32mupdate-manager[0m
+ [01;32mupdate-mime-database[0m
+ [01;32mupdate-notifier[0m
+ [01;32mupdate-perl-sax-parsers[0m
+ [01;32mupdate_rubygems[0m
+ [01;36mupdmap[0m
+ [01;36mupdmap-sys[0m
+ [01;36mupdmap-user[0m
+ [01;36mupdvitomp[0m
+ [01;32mupdvitype[0m
+ [01;32mupmendex[0m
+ [01;32mupmpost[0m
+ [01;32mupower[0m
+ [01;32muppltotf[0m
+ [01;32muptex[0m
+ [01;32muptftopl[0m
+ [01;32muptime[0m
+ [01;32musb-creator-gtk[0m
+ [01;32musb-devices[0m
+ [01;32musbhid-dump[0m
+ [01;32musb_printerid[0m
+ [01;32musbreset[0m
+ [01;32musers[0m
+ [01;32mutmpdump[0m
+ [01;32muuidgen[0m
+ [01;32muuidparse[0m
+ [01;36mVBoxAudioTest[0m
+ [01;36mVBoxClient[0m
+ [01;36mVBoxClient-all[0m
+ [01;36mVBoxControl[0m
+ [01;36mVBoxDRMClient[0m
+ [01;32mvcs-run[0m
+ [01;32mvdir[0m
+ [01;32mvftovp[0m
+ [01;32mVGAuthService[0m
+ [01;36mvi[0m
+ [01;36mview[0m
+ [01;32mviewres[0m
+ [01;32mvigpg[0m
+ [01;36mvim[0m
+ [01;32mvim.basic[0m
+ [01;36mvimdiff[0m
+ [01;32mvimdot[0m
+ [01;32mvim.tiny[0m
+ [01;32mvimtutor[0m
+ [01;32mvlna[0m
+ [01;32mvmhgfs-fuse[0m
+ [01;32mvmstat[0m
+ [01;32mvm-support[0m
+ [01;32mvmtoolsd[0m
+ [01;32mvmware-alias-import[0m
+ [01;32mvmware-checkvm[0m
+ [01;32mvmwarectrl[0m
+ [01;32mvmware-hgfsclient[0m
+ [01;32mvmware-namespace-cmd[0m
+ [01;32mvmware-rpctool[0m
+ [01;32mvmware-toolbox-cmd[0m
+ [01;32mvmware-vgauth-cmd[0m
+ [01;32mvmware-vmblock-fuse[0m
+ [01;32mvmware-xferlogs[0m
+ [01;32mvptovf[0m
+ [01;32mvstp[0m
+ [01;32mw[0m
+ [01;32mw3m[0m
+ [01;32mw3mman[0m
+ [30;43mwall[0m
+ [01;32mwatch[0m
+ [01;32mwatchgnupg[0m
+ [01;32mwbmptopbm[0m
+ [01;32mwc[0m
+ [01;32mwdctl[0m
+ [01;32mweave[0m
+ [01;32mwget[0m
+ [01;32mwhatis[0m
+ [01;32mwhereis[0m
+ [01;36mwhich[0m
+ [01;32mwhich.debianutils[0m
+ [01;32mwhiptail[0m
+ [01;32mwho[0m
+ [01;32mwhoami[0m
+ [01;32mwhoopsie[0m
+ [01;32mwhoopsie-preferences[0m
+ [01;32mwifi-status[0m
+ [01;32mwinicontoppm[0m
+ [01;32mwmf2eps[0m
+ [01;32mwmf2fig[0m
+ [01;32mwmf2gd[0m
+ [01;32mwmf2svg[0m
+ [01;32mwmf2x[0m
+ [01;32mwofm2opl[0m
+ [01;32mwopl2ofm[0m
+ [01;32mword-list-compress[0m
+ [01;32mwovf2ovp[0m
+ [01;32mwovp2ovf[0m
+ [01;32mwpa_passphrase[0m
+ [01;36mwrite[0m
+ [30;43mwrite.ul[0m
+ [01;36mwww-browser[0m
+ [01;36mX[0m
+ [01;36mX11[0m
+ [01;32mx11perf[0m
+ [01;32mx11perfcomp[0m
+ [01;36mx86_64[0m
+ [01;32mx86_64-linux-gnu-addr2line[0m
+ [01;32mx86_64-linux-gnu-ar[0m
+ [01;32mx86_64-linux-gnu-as[0m
+ [01;32mx86_64-linux-gnu-c++filt[0m
+ [01;36mx86_64-linux-gnu-cpp[0m
+ [01;32mx86_64-linux-gnu-cpp-11[0m
+ [01;32mx86_64-linux-gnu-cpp-12[0m
+ [01;32mx86_64-linux-gnu-dwp[0m
+ [01;32mx86_64-linux-gnu-elfedit[0m
+ [01;36mx86_64-linux-gnu-g++[0m
+ [01;32mx86_64-linux-gnu-g++-11[0m
+ [01;36mx86_64-linux-gnu-gcc[0m
+ [01;32mx86_64-linux-gnu-gcc-11[0m
+ [01;32mx86_64-linux-gnu-gcc-12[0m
+ [01;36mx86_64-linux-gnu-gcc-ar[0m
+ [01;32mx86_64-linux-gnu-gcc-ar-11[0m
+ [01;32mx86_64-linux-gnu-gcc-ar-12[0m
+ [01;36mx86_64-linux-gnu-gcc-nm[0m
+ [01;32mx86_64-linux-gnu-gcc-nm-11[0m
+ [01;32mx86_64-linux-gnu-gcc-nm-12[0m
+ [01;36mx86_64-linux-gnu-gcc-ranlib[0m
+ [01;32mx86_64-linux-gnu-gcc-ranlib-11[0m
+ [01;32mx86_64-linux-gnu-gcc-ranlib-12[0m
+ [01;36mx86_64-linux-gnu-gcov[0m
+ [01;32mx86_64-linux-gnu-gcov-11[0m
+ [01;32mx86_64-linux-gnu-gcov-12[0m
+ [01;36mx86_64-linux-gnu-gcov-dump[0m
+ [01;32mx86_64-linux-gnu-gcov-dump-11[0m
+ [01;32mx86_64-linux-gnu-gcov-dump-12[0m
+ [01;36mx86_64-linux-gnu-gcov-tool[0m
+ [01;32mx86_64-linux-gnu-gcov-tool-11[0m
+ [01;32mx86_64-linux-gnu-gcov-tool-12[0m
+ [01;36mx86_64-linux-gnu-gold[0m
+ [01;32mx86_64-linux-gnu-gprof[0m
+ [01;36mx86_64-linux-gnu-ld[0m
+ [01;32mx86_64-linux-gnu-ld.bfd[0m
+ [01;32mx86_64-linux-gnu-ld.gold[0m
+ [01;32mx86_64-linux-gnu-lto-dump-11[0m
+ [01;32mx86_64-linux-gnu-lto-dump-12[0m
+ [01;32mx86_64-linux-gnu-nm[0m
+ [01;32mx86_64-linux-gnu-objcopy[0m
+ [01;32mx86_64-linux-gnu-objdump[0m
+ [01;32mx86_64-linux-gnu-ranlib[0m
+ [01;32mx86_64-linux-gnu-readelf[0m
+ [01;32mx86_64-linux-gnu-size[0m
+ [01;32mx86_64-linux-gnu-strings[0m
+ [01;32mx86_64-linux-gnu-strip[0m
+ [01;32mxargs[0m
+ [01;32mxauth[0m
+ [01;32mxbiff[0m
+ [01;32mxbmtopbm[0m
+ [01;32mxbrlapi[0m
+ [01;32mxcalc[0m
+ [01;32mxclip[0m
+ [01;32mxclipboard[0m
+ [01;32mxclip-copyfile[0m
+ [01;32mxclip-cutfile[0m
+ [01;32mxclip-pastefile[0m
+ [01;32mxclock[0m
+ [01;32mxcmsdb[0m
+ [01;32mxconsole[0m
+ [01;32mxcursorgen[0m
+ [01;32mxcutsel[0m
+ [01;32mxdg-dbus-proxy[0m
+ [01;32mxdg-desktop-icon[0m
+ [01;32mxdg-desktop-menu[0m
+ [01;32mxdg-email[0m
+ [01;32mxdg-icon-resource[0m
+ [01;32mxdg-mime[0m
+ [01;32mxdg-open[0m
+ [01;32mxdg-screensaver[0m
+ [01;32mxdg-settings[0m
+ [01;32mxdg-user-dir[0m
+ [01;32mxdg-user-dirs-gtk-update[0m
+ [01;32mxdg-user-dirs-update[0m
+ [01;32mxditview[0m
+ [01;32mxdpyinfo[0m
+ [01;32mxdriinfo[0m
+ [01;32mxdvi[0m
+ [01;36mxdvi.bin[0m
+ [01;32mxdvipdfmx[0m
+ [01;32mxdvi-xaw[0m
+ [01;32mxedit[0m
+ [01;32mXephyr[0m
+ [01;32mxetex[0m
+ [01;32mxev[0m
+ [01;32mxeyes[0m
+ [01;32mxfd[0m
+ [01;32mxfontsel[0m
+ [01;32mxgamma[0m
+ [01;32mxgc[0m
+ [01;32mxhost[0m
+ [01;32mximtoppm[0m
+ [01;32mxinit[0m
+ [01;32mxinput[0m
+ [01;32mxkbbell[0m
+ [01;32mxkbcomp[0m
+ [01;32mxkbevd[0m
+ [01;32mxkbprint[0m
+ [01;32mxkbvleds[0m
+ [01;32mxkbwatch[0m
+ [01;32mxkeystone[0m
+ [01;32mxkill[0m
+ [01;32mxload[0m
+ [01;32mxlogo[0m
+ [01;32mxlsatoms[0m
+ [01;32mxlsclients[0m
+ [01;32mxlsfonts[0m
+ [01;32mxmag[0m
+ [01;32mxman[0m
+ [01;32mxmessage[0m
+ [01;32mxml2pmx[0m
+ [01;32mxmodmap[0m
+ [01;32mxmore[0m
+ [01;32mXorg[0m
+ [01;32mxpmtoppm[0m
+ [01;32mxprop[0m
+ [01;32mxqxdecode[0m
+ [01;32mxrandr[0m
+ [01;32mxrdb[0m
+ [01;32mxrefresh[0m
+ [01;36mx-session-manager[0m
+ [01;32mxset[0m
+ [01;32mxsetmode[0m
+ [01;32mxsetpointer[0m
+ [01;32mxsetroot[0m
+ [01;32mxsetwacom[0m
+ [01;32mxsm[0m
+ [01;32mxstdcmap[0m
+ [01;32mxsubpp[0m
+ [01;36mx-terminal-emulator[0m
+ [01;32mxvidtune[0m
+ [01;32mxvinfo[0m
+ [01;32mxvminitoppm[0m
+ [01;32mXwayland[0m
+ [01;32mxwd[0m
+ [01;32mxwdtopnm[0m
+ [01;32mxwininfo[0m
+ [01;32mxwud[0m
+ [01;36mx-www-browser[0m
+ [01;32mxxd[0m
+ [01;32mxz[0m
+ [01;36mxzcat[0m
+ [01;36mxzcmp[0m
+ [01;32mxzdiff[0m
+ [01;36mxzegrep[0m
+ [01;36mxzfgrep[0m
+ [01;32mxzgrep[0m
+ [01;32mxzless[0m
+ [01;32mxzmore[0m
+ [01;32mybmtopbm[0m
+ [01;32myelp[0m
+ [01;32myes[0m
+ [01;36mypdomainname[0m
+ [01;32myuvsplittoppm[0m
+ [01;32myuvtoppm[0m
+ [01;32mzcat[0m
+ [01;32mzcmp[0m
+ [01;32mzdiff[0m
+ [01;32mzdump[0m
+ [01;32mzegrep[0m
+ [01;32mzeisstopnm[0m
+ [01;32mzenity[0m
+ [01;32mzfgrep[0m
+ [01;32mzforce[0m
+ [01;32mzgrep[0m
+ [01;32mzip[0m
+ [01;32mzipcloak[0m
+ [01;32mzipdetails[0m
+ [01;32mzipgrep[0m
+ [01;32mzipinfo[0m
+ [01;32mzipnote[0m
+ [01;32mzipsplit[0m
+ [01;32mzjsdecode[0m
+ [01;32mzless[0m
+ [01;32mzmore[0m
+ [01;32mznew[0m
+ [01;32mzstd[0m
+ [01;36mzstdcat[0m
+ [01;32mzstdgrep[0m
+ [01;32mzstdless[0m
+ [01;36mzstdmt[0m
+[?2004h]0;kc@csc235: /bin[01;32mkc@csc235[00m:[01;34m/bin[00m$ fzf
+[?2004l[?1049h[?1000h[26A[G[K[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [;m                                                                 [;1;38;5;110m>[m[;m [m[;1m[m[;1m[m[1A[;m                                                                 [;1;38;5;148m⠋[m[2C[;38;5;144m0/0[m[1B[2C[1A[;m                                                                 [2C[;38;5;144m2338/2338[m[25A[;48;5;236m [m[;m [;minstall-printerdriver[m[1B[;48;5;236m [m[;m [;msg_reset_wp[m[1B[;48;5;236m [m[;m [;morca[m[1B[;48;5;236m [m[;m [;mgrub-mkrescue[m[1B[;48;5;236m [m[;m [;mavinfo[m[1B[;48;5;236m [m[;m [;mmkzftree[m[1B[;48;5;236m [m[;m [;mfig2dev[m[1B[;48;5;236m [m[;m [;mpl2pm[m[1B[;48;5;236m [m[;m [;mgst-launch-1.0[m[1B[;48;5;236m [m[;m [;mctags[m[1B[;48;5;236m [m[;m [;mtrue[m[1B[;48;5;236m [m[;m [;mbtrfs-convert[m[1B[;48;5;236m [m[;m [;m[[m[1B[;48;5;236m [m[;m [;mdh_numpy3[m[1B[;48;5;236m [m[;m [;mscsi_readcap[m[1B[;48;5;236m [m[;m [;mrdma[m[1B[;48;5;236m [m[;m [;mt1unmac[m[1B[;48;5;236m [m[;m [;mrpmgraph[m[1B[;48;5;236m [m[;m [;misdv4-serial-inputattach[m[1B[;48;5;236m [m[;m [;mupdate_rubygems[m[1B[;48;5;236m [m[;m [;mrpmsign[m[1B[;48;5;236m [m[;m [;mppmtobmp[m[1B[;48;5;236m [m[;m [;mbootctl[m[1B[;48;5;236m [m[;m [;mpico[m[1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236mgrep-debtags[m[2B[2C[2C[1A[;m                                                                 [2C[;38;5;144m2338/2338[m[1B[2C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1me[m[;1m[m[3C[1A[;m                                                                 [2C[;38;5;144m1149/2338[m[25A[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mvince[m[;m               [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mrb3.0[m[;m     [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mxpiry[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mditor[m[;m       [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;muptex[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mnc2xs[m[;m  [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mject[m[;m  [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;msc-m[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mgrep[m[;m         [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mtags[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mptex[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mmacs[m[;m        [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mtex[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mdit[m[;m     [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mcho[m[;m        [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mxpr[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mutp[m[;m   [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mqn[m[;m     [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mog[m[;m                     [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mza[m[;m            [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mnv[m[;m    [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mbb[m[;m     [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mrb[m[;m    [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;md[m[;m  [1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236me[m[;1;38;5;254;48;5;236mx[m[;m          [2B[3C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1mei[m[;1m[m[4C[26A[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mmacscl[m[;38;5;108mi[m[;ment[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;ms2tr[m[;38;5;108mi[m[;m.x86_64-linux-gnu[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;ms2tr[m[;38;5;108mi[m[1B[;48;5;236m [m[;m [;mdbus-update-activation-[m[;38;5;108me[m[;mnv[m[;38;5;108mi[m[;mronment[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mgl[m[;38;5;108mi[m[;mnfo.x86_64-linux-gnu[m[1B[;48;5;236m [m[;m [;mxdg-[m[;38;5;108me[m[;mma[m[;38;5;108mi[m[;ml[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mgl[m[;38;5;108mi[m[;mnfo[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mxp[m[;38;5;108mi[m[;mry[m[1B[;48;5;236m [m[;m [;mmake-first-[m[;38;5;108me[m[;mx[m[;38;5;108mi[m[;msting-target[m[1B[;48;5;236m [m[;m [;mnm-connection-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mtor[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;mnce-thumbnailer[m[1B[;48;5;236m [m[;m [;mdesktop-file-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mt[m[1B[;48;5;236m [m[;m [;mgnome-text-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mtor[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;mnce-previewer[m[1B[;48;5;236m [m[;m [;msensible-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mtor[m[1B[;48;5;236m [m[;m [;mselect-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mtor[m[1B[;48;5;236m [m[;m [;mgrub-glue-[m[;38;5;108me[m[;mf[m[;38;5;108mi[m[1B[;48;5;236m [m[;m [;mgrub-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mtenv[m[1B[;48;5;236m [m[;m [;mnmtui-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mt[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mtres[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;mnce[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mtor[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mt[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;ms2_[m[;38;5;108mi[m[;mnfo.x86_64-linux-gnu[m[1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236me[m[;1;38;5;254;48;5;236ms2_[m[;1;38;5;151;48;5;236mi[m[;1;38;5;254;48;5;236mnfo[m[1B[;m                                                                 [2C[;38;5;144m258/2338[m[1B[4C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1mein[m[;1m[m[1A[;m                                                                 [2C[;38;5;144m99/2338[m[25A[;48;5;236m [m[;m [;mpast[m[;38;5;108me[m[;mb[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mit[m[;m [1B[;48;5;236m [m[;m [;md[m[;38;5;108me[m[;mbian-distro-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mfo[m[;m     [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;ms2tri.x86_64-l[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mux-gnu[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mmacscl[m[;38;5;108mi[m[;me[m[;38;5;108mn[m[;mt.emacs[m[;m                 [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mmacscl[m[;38;5;108mi[m[;me[m[;38;5;108mn[m[;mt[m[;m             [1B[;48;5;236m [m[;m [;mdbus-update-activation-[m[;38;5;108me[m[;mnv[m[;38;5;108mi[m[;mro[m[;38;5;108mn[m[;mment[m[1B[;48;5;236m [m[;m [;mgnome-s[m[;38;5;108me[m[;mssion-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mhibit[m[1B[;48;5;236m [m[;m [;mpamd[m[;38;5;108me[m[;m[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mterlace[m[1B[;48;5;236m [m[;m [;mmak[m[;38;5;108me[m[;m[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mdex[m[;m                 [1B[;48;5;236m [m[;m [;misdv4-s[m[;38;5;108me[m[;mrial-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mputattach[m[1B[;48;5;236m [m[;m [;mgrub-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mte[m[;38;5;108mn[m[;mv[m[;m      [1B[;48;5;236m [m[;m [;mdeb-syst[m[;38;5;108me[m[;mmd-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mvoke[m[1B[;48;5;236m [m[;m [;msyst[m[;38;5;108me[m[;mmd-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mhibit[m[;m  [1B[;48;5;236m [m[;m [;mgstreamer-cod[m[;38;5;108me[m[;mc-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mstall[m[1B[;48;5;236m [m[;m [;mbyobu-launch[m[;38;5;108me[m[;mr-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mstall[m[1B[;48;5;236m [m[;m [;mkern[m[;38;5;108me[m[;ml-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mstall[m[1B[;48;5;236m [m[;m [;mdesktop-fil[m[;38;5;108me[m[;m-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mstall[m[1B[;48;5;236m [m[;m [;mmake-first-[m[;38;5;108me[m[;mxist[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg-target[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mgl[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mfo.x86_64-linux-gnu[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mgl[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mfo[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mce-thumbnailer[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mce-previewer[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mce[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;ms2_[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mfo.x86_64-linux-gnu[m[1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236me[m[;1;38;5;254;48;5;236ms2_[m[;1;38;5;151;48;5;236mi[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236mn[m[;1;38;5;254;48;5;236mfo[m[2B[5C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1meint[m[;1m[m[1A[;m                                                                 [2C[;38;5;144m36/2338[m[25A[;48;5;236m [m[;m [;mwhich.d[m[;38;5;108me[m[;mb[m[;38;5;108mi[m[;ma[m[;38;5;108mn[m[;mu[m[;38;5;108mt[m[;mils[m[1B[;48;5;236m [m[;m [;mvmwar[m[;38;5;108me[m[;m-hgfscl[m[;38;5;108mi[m[;me[m[;38;5;108mn[m[;m[m[;38;5;108mt[m[;m [1B[;48;5;236m [m[;m [;mpys[m[;38;5;108me[m[;mrial-m[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mi[m[;38;5;108mt[m[;merm[m[;m      [1B[;48;5;236m [m[;m [;mgnom[m[;38;5;108me[m[;m-disk-[m[;38;5;108mi[m[;mmage-mou[m[;38;5;108mn[m[;m[m[;38;5;108mt[m[;mer[m[1B[;48;5;236m [m[;m [;msyst[m[;38;5;108me[m[;mm-config-pr[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108mt[m[;mer-applet[m[1B[;48;5;236m [m[;m [;mbyobu-launch[m[;38;5;108me[m[;mr-un[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;ms[m[;38;5;108mt[m[;mall[m[;m          [1B[;48;5;236m [m[;m [;msyst[m[;38;5;108me[m[;mm-config-pr[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108mt[m[;mer[m[1B[;48;5;236m [m[;m [;mgnome-shell-[m[;38;5;108me[m[;mxtens[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m-[m[;38;5;108mt[m[;mool[m[1B[;48;5;236m [m[;m [;mpast[m[;38;5;108me[m[;mb[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mi[m[;38;5;108mt[m[1B[;48;5;236m [m[;m [;mgnome-s[m[;38;5;108me[m[;mssion-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mhibi[m[;38;5;108mt[m[;m   [1B[;48;5;236m [m[;m [;mxs[m[;38;5;108me[m[;mtpo[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108mt[m[;mer[m[;m [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mdgepa[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108mt[m[;m         [1B[;48;5;236m [m[;m [;misdv4-s[m[;38;5;108me[m[;mrial-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mpu[m[;38;5;108mt[m[;mattach[m[1B[;48;5;236m [m[;m [;msyst[m[;38;5;108me[m[;mmd-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mhibi[m[;38;5;108mt[m[;m        [1B[;48;5;236m [m[;m [;mn[m[;38;5;108me[m[;mtk[m[;38;5;108mi[m[;mt-[m[;38;5;108mn[m[;m[m[;38;5;108mt[m[;malk[m[;m          [1B[;48;5;236m [m[;m [;mdbus-update-activation-[m[;38;5;108me[m[;mnv[m[;38;5;108mi[m[;mronme[m[;38;5;108mn[m[;m[m[;38;5;108mt[m[1B[;48;5;236m [m[;m [;mgstreamer-cod[m[;38;5;108me[m[;mc-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;ms[m[;38;5;108mt[m[;mall[m[1B[;48;5;236m [m[;m [;mbyobu-launch[m[;38;5;108me[m[;mr-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;ms[m[;38;5;108mt[m[;mall[m[;m    [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mmacscl[m[;38;5;108mi[m[;me[m[;38;5;108mn[m[;m[m[;38;5;108mt[m[;m.emacs[m[;m       [1B[;48;5;236m [m[;m [;mkern[m[;38;5;108me[m[;ml-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;ms[m[;38;5;108mt[m[;mall[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mmacscl[m[;38;5;108mi[m[;me[m[;38;5;108mn[m[;m[m[;38;5;108mt[m[;m       [1B[;48;5;236m [m[;m [;mdesktop-fil[m[;38;5;108me[m[;m-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;ms[m[;38;5;108mt[m[;mall[m[1B[;48;5;236m [m[;m [;mpamd[m[;38;5;108me[m[;m[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108mt[m[;merlace[m[1B[;48;5;236m [m[;m [;mmake-first-[m[;38;5;108me[m[;mxist[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg-[m[;38;5;108mt[m[;marget[m[1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236me[m[;1;38;5;254;48;5;236mv[m[;1;38;5;151;48;5;236mi[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236mn[m[;1;38;5;254;48;5;236mce-[m[;1;38;5;151;48;5;236mt[m[;1;38;5;254;48;5;236mhumbnailer[m[2B[6C[1A[;m                                                                 [2C[;38;5;144m99/2338[m[25A[;48;5;236m [m[;m [;mpast[m[;38;5;108me[m[;mb[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mit[m[;m       [1B[;48;5;236m [m[;m [;md[m[;38;5;108me[m[;mbian-distro-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mfo[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;ms2tri.x86_64-l[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mux-gnu[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mmacscl[m[;38;5;108mi[m[;me[m[;38;5;108mn[m[;mt.emacs[m[;m       [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mmacscl[m[;38;5;108mi[m[;me[m[;38;5;108mn[m[;mt[m[;m                 [1B[;48;5;236m [m[;m [;mdbus-update-activation-[m[;38;5;108me[m[;mnv[m[;38;5;108mi[m[;mro[m[;38;5;108mn[m[;mment[m[1B[;48;5;236m [m[;m [;mgnome-s[m[;38;5;108me[m[;mssion-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mhibit[m[1B[;48;5;236m [m[;m [;mpamd[m[;38;5;108me[m[;m[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mterlace[m[;m            [1B[;48;5;236m [m[;m [;mmak[m[;38;5;108me[m[;m[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mdex[m[;m [1B[;48;5;236m [m[;m [;misdv4-s[m[;38;5;108me[m[;mrial-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mputattach[m[1B[;48;5;236m [m[;m [;mgrub-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mte[m[;38;5;108mn[m[;mv[m[1B[;48;5;236m [m[;m [;mdeb-syst[m[;38;5;108me[m[;mmd-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mvoke[m[1B[;48;5;236m [m[;m [;msyst[m[;38;5;108me[m[;mmd-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mhibit[m[;m         [1B[;48;5;236m [m[;m [;mgstreamer-cod[m[;38;5;108me[m[;mc-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mstall[m[1B[;48;5;236m [m[;m [;mbyobu-launch[m[;38;5;108me[m[;mr-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mstall[m[1B[;48;5;236m [m[;m [;mkern[m[;38;5;108me[m[;ml-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mstall[m[;m                    [1B[;48;5;236m [m[;m [;mdesktop-fil[m[;38;5;108me[m[;m-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mstall[m[;m   [1B[;48;5;236m [m[;m [;mmake-first-[m[;38;5;108me[m[;mxist[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg-target[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mgl[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mfo.x86_64-linux-gnu[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mgl[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mfo[m[;m       [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mce-thumbnailer[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mce-previewer[m[;m    [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mce[m[;m        [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;ms2_[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mfo.x86_64-linux-gnu[m[;m [1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236me[m[;1;38;5;254;48;5;236ms2_[m[;1;38;5;151;48;5;236mi[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236mn[m[;1;38;5;254;48;5;236mfo[m[;m          [2B[;m                                                                 [;1;38;5;110m>[m[;m [m[;1mein[m[;1m[m[5C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1meins[m[;1m[m[1A[;m                                                                 [2C[;38;5;144m25/2338[m[25A[;48;5;236m [m[;m [;mgnome-s[m[;38;5;108me[m[;mss[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m-propertie[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;mmigrat[m[;38;5;108me[m[;m-pubr[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg-from-cla[m[;38;5;108ms[m[;msic-gpg[m[1B[;48;5;236m [m[;m [;mwhich.d[m[;38;5;108me[m[;mb[m[;38;5;108mi[m[;ma[m[;38;5;108mn[m[;mutil[m[;38;5;108ms[m[;m      [1B[;48;5;236m [m[;m [;md[m[;38;5;108me[m[;mb[m[;38;5;108mi[m[;ma[m[;38;5;108mn[m[;m-di[m[;38;5;108ms[m[;mtro-info[m[1B[;48;5;236m [m[;m [;mgnome-s[m[;38;5;108me[m[;mss[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m-custom-[m[;38;5;108ms[m[;mession[m[1B[;48;5;236m [m[;m [;mlinux-updat[m[;38;5;108me[m[;m-syml[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mk[m[;38;5;108ms[m[;m             [1B[;48;5;236m [m[;m [;mbyobu-k[m[;38;5;108me[m[;mybind[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg[m[;38;5;108ms[m[;m    [1B[;48;5;236m [m[;m [;mr[m[;38;5;108me[m[;ms[m[;38;5;108mi[m[;mzeco[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;m    [1B[;48;5;236m [m[;m [;msyst[m[;38;5;108me[m[;mmd-mach[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;me-id-[m[;38;5;108ms[m[;metup[m[1B[;48;5;236m [m[;m [;mdebconf-set-sel[m[;38;5;108me[m[;mct[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;m  [1B[;48;5;236m [m[;m [;munity-s[m[;38;5;108me[m[;mtt[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg[m[;38;5;108ms[m[;m-daemon[m[1B[;48;5;236m [m[;m [;mgtk4-query-s[m[;38;5;108me[m[;mtt[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;mgtk-query-s[m[;38;5;108me[m[;mtt[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mmacscl[m[;38;5;108mi[m[;me[m[;38;5;108mn[m[;mt.emac[m[;38;5;108ms[m[;m      [1B[;48;5;236m [m[;m [;mgnome-[m[;38;5;108me[m[;mxtens[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;m      [1B[;48;5;236m [m[;m [;mxdg-s[m[;38;5;108me[m[;mtt[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg[m[;38;5;108ms[m[;m  [1B[;48;5;236m [m[;m [;mpy3v[m[;38;5;108me[m[;mrs[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;m         [1B[;48;5;236m [m[;m [;mgs[m[;38;5;108me[m[;mtt[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg[m[;38;5;108ms[m[;m                 [1B[;48;5;236m [m[;m [;mavahi-brows[m[;38;5;108me[m[;m-doma[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;m    [1B[;48;5;236m [m[;m [;mbyobu-launch[m[;38;5;108me[m[;mr-un[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;mtall[m[1B[;48;5;236m [m[;m [;msan[m[;38;5;108me[m[;m-f[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;md-[m[;38;5;108ms[m[;mcanner[m[;m [1B[;48;5;236m [m[;m [;mgstreamer-cod[m[;38;5;108me[m[;mc-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;mtall[m[1B[;48;5;236m [m[;m [;mbyobu-launch[m[;38;5;108me[m[;mr-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;mtall[m[1B[;48;5;236m [m[;m [;mkern[m[;38;5;108me[m[;ml-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;mtall[m[;m           [1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236mdesktop-fil[m[;1;38;5;151;48;5;236me[m[;1;38;5;254;48;5;236m-[m[;1;38;5;151;48;5;236mi[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236mn[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236ms[m[;1;38;5;254;48;5;236mtall[m[2B[6C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1meinst[m[;1m[m[7C[1A[;m                                                                 [2C[;38;5;144m8/2338[m[25A[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;48;5;236m [m[;m [;mgnome-s[m[;38;5;108me[m[;mss[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m-cu[m[;38;5;108ms[m[;m[m[;38;5;108mt[m[;mom-session[m[1B[;48;5;236m [m[;m [;msyst[m[;38;5;108me[m[;mmd-mach[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;me-id-[m[;38;5;108ms[m[;me[m[;38;5;108mt[m[;mup[m[1B[;48;5;236m [m[;m [;md[m[;38;5;108me[m[;mb[m[;38;5;108mi[m[;ma[m[;38;5;108mn[m[;m-di[m[;38;5;108ms[m[;m[m[;38;5;108mt[m[;mro-info[m[;m      [1B[;48;5;236m [m[;m [;mbyobu-launch[m[;38;5;108me[m[;mr-un[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;m[m[;38;5;108mt[m[;mall[m[1B[;48;5;236m [m[;m [;mgstreamer-cod[m[;38;5;108me[m[;mc-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;m[m[;38;5;108mt[m[;mall[m[1B[;48;5;236m [m[;m [;mbyobu-launch[m[;38;5;108me[m[;mr-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;m[m[;38;5;108mt[m[;mall[m[1B[;48;5;236m [m[;m [;mkern[m[;38;5;108me[m[;ml-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;m[m[;38;5;108mt[m[;mall[m[1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236mdesktop-fil[m[;1;38;5;151;48;5;236me[m[;1;38;5;254;48;5;236m-[m[;1;38;5;151;48;5;236mi[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236mn[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236ms[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236mt[m[;1;38;5;254;48;5;236mall[m[2B[7C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1meinsti[m[;1m[m[1A[;m                                                                 [2C[;38;5;144m2/2338[m[8A[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;m                                                                 [1B[;48;5;236m [m[;m [;mgnome-s[m[;38;5;108me[m[;mss[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m-cu[m[;38;5;108ms[m[;m[m[;38;5;108mt[m[;mom-sess[m[;38;5;108mi[m[;mon[m[1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236md[m[;1;38;5;151;48;5;236me[m[;1;38;5;254;48;5;236mb[m[;1;38;5;151;48;5;236mi[m[;1;38;5;254;48;5;236ma[m[;1;38;5;151;48;5;236mn[m[;1;38;5;254;48;5;236m-di[m[;1;38;5;151;48;5;236ms[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236mt[m[;1;38;5;254;48;5;236mro-[m[;1;38;5;151;48;5;236mi[m[;1;38;5;254;48;5;236mnfo[m[;m  [2B[8C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1meinstim[m[;1m[m[1A[;m                                                                 [2C[;38;5;144m0/2338[m[2A[;m                                                                 [1B[;m                                                                 [2B[9C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1meinstime[m[;1m[m[1A[;m                                                                 [2C[;38;5;144m0/2338[m[1B[10C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1meinstim[m[;1m[m[1A[;m                                                                 [2C[;38;5;144m0/2338[m[1B[9C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1meinstime[m[;1m[m[1A[;m                                                                 [2C[;38;5;144m0/2338[m[1B[10C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1meinstim[m[;1m[m[9C[1A[;m                                                                 [2C[;38;5;144m0/2338[m[1B[9C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1meinsti[m[;1m[m[1A[;m                                                                 [2C[;38;5;144m2/2338[m[2A[;48;5;236m [m[;m [;mgnome-s[m[;38;5;108me[m[;mss[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m-cu[m[;38;5;108ms[m[;m[m[;38;5;108mt[m[;mom-sess[m[;38;5;108mi[m[;mon[m[1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236md[m[;1;38;5;151;48;5;236me[m[;1;38;5;254;48;5;236mb[m[;1;38;5;151;48;5;236mi[m[;1;38;5;254;48;5;236ma[m[;1;38;5;151;48;5;236mn[m[;1;38;5;254;48;5;236m-di[m[;1;38;5;151;48;5;236ms[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236mt[m[;1;38;5;254;48;5;236mro-[m[;1;38;5;151;48;5;236mi[m[;1;38;5;254;48;5;236mnfo[m[2B[8C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1meinst[m[;1m[m[1A[;m                                                                 [2C[;38;5;144m8/2338[m[8A[;48;5;236m [m[;m [;mgnome-s[m[;38;5;108me[m[;mss[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m-cu[m[;38;5;108ms[m[;m[m[;38;5;108mt[m[;mom-session[m[1B[;48;5;236m [m[;m [;msyst[m[;38;5;108me[m[;mmd-mach[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;me-id-[m[;38;5;108ms[m[;me[m[;38;5;108mt[m[;mup[m[1B[;48;5;236m [m[;m [;md[m[;38;5;108me[m[;mb[m[;38;5;108mi[m[;ma[m[;38;5;108mn[m[;m-di[m[;38;5;108ms[m[;m[m[;38;5;108mt[m[;mro-info[m[1B[;48;5;236m [m[;m [;mbyobu-launch[m[;38;5;108me[m[;mr-un[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;m[m[;38;5;108mt[m[;mall[m[1B[;48;5;236m [m[;m [;mgstreamer-cod[m[;38;5;108me[m[;mc-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;m[m[;38;5;108mt[m[;mall[m[1B[;48;5;236m [m[;m [;mbyobu-launch[m[;38;5;108me[m[;mr-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;m[m[;38;5;108mt[m[;mall[m[1B[;48;5;236m [m[;m [;mkern[m[;38;5;108me[m[;ml-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;m[m[;38;5;108mt[m[;mall[m[;m              [1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236mdesktop-fil[m[;1;38;5;151;48;5;236me[m[;1;38;5;254;48;5;236m-[m[;1;38;5;151;48;5;236mi[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236mn[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236ms[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236mt[m[;1;38;5;254;48;5;236mall[m[2B[7C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1meins[m[;1m[m[1A[;m                                                                 [2C[;38;5;144m25/2338[m[25A[;48;5;236m [m[;m [;mgnome-s[m[;38;5;108me[m[;mss[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m-propertie[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;mmigrat[m[;38;5;108me[m[;m-pubr[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg-from-cla[m[;38;5;108ms[m[;msic-gpg[m[1B[;48;5;236m [m[;m [;mwhich.d[m[;38;5;108me[m[;mb[m[;38;5;108mi[m[;ma[m[;38;5;108mn[m[;mutil[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;md[m[;38;5;108me[m[;mb[m[;38;5;108mi[m[;ma[m[;38;5;108mn[m[;m-di[m[;38;5;108ms[m[;mtro-info[m[1B[;48;5;236m [m[;m [;mgnome-s[m[;38;5;108me[m[;mss[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m-custom-[m[;38;5;108ms[m[;mession[m[1B[;48;5;236m [m[;m [;mlinux-updat[m[;38;5;108me[m[;m-syml[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mk[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;mbyobu-k[m[;38;5;108me[m[;mybind[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;mr[m[;38;5;108me[m[;ms[m[;38;5;108mi[m[;mzeco[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;msyst[m[;38;5;108me[m[;mmd-mach[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;me-id-[m[;38;5;108ms[m[;metup[m[1B[;48;5;236m [m[;m [;mdebconf-set-sel[m[;38;5;108me[m[;mct[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;munity-s[m[;38;5;108me[m[;mtt[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg[m[;38;5;108ms[m[;m-daemon[m[1B[;48;5;236m [m[;m [;mgtk4-query-s[m[;38;5;108me[m[;mtt[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;mgtk-query-s[m[;38;5;108me[m[;mtt[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mmacscl[m[;38;5;108mi[m[;me[m[;38;5;108mn[m[;mt.emac[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;mgnome-[m[;38;5;108me[m[;mxtens[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;mxdg-s[m[;38;5;108me[m[;mtt[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;mpy3v[m[;38;5;108me[m[;mrs[m[;38;5;108mi[m[;mo[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[1B[;48;5;236m [m[;m [;mgs[m[;38;5;108me[m[;mtt[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg[m[;38;5;108ms[m[;m                   [1B[;48;5;236m [m[;m [;mavahi-brows[m[;38;5;108me[m[;m-doma[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;m    [1B[;48;5;236m [m[;m [;mbyobu-launch[m[;38;5;108me[m[;mr-un[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;mtall[m[1B[;48;5;236m [m[;m [;msan[m[;38;5;108me[m[;m-f[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;md-[m[;38;5;108ms[m[;mcanner[m[;m       [1B[;48;5;236m [m[;m [;mgstreamer-cod[m[;38;5;108me[m[;mc-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;mtall[m[1B[;48;5;236m [m[;m [;mbyobu-launch[m[;38;5;108me[m[;mr-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;mtall[m[1B[;48;5;236m [m[;m [;mkern[m[;38;5;108me[m[;ml-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;m[m[;38;5;108ms[m[;mtall[m[1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236mdesktop-fil[m[;1;38;5;151;48;5;236me[m[;1;38;5;254;48;5;236m-[m[;1;38;5;151;48;5;236mi[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236mn[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236ms[m[;1;38;5;254;48;5;236mtall[m[2B[6C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1mein[m[;1m[m[1A[;m                                                                 [2C[;38;5;144m99/2338[m[25A[;48;5;236m [m[;m [;mpast[m[;38;5;108me[m[;mb[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mit[m[;m              [1B[;48;5;236m [m[;m [;md[m[;38;5;108me[m[;mbian-distro-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mfo[m[;m              [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;ms2tri.x86_64-l[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mux-gnu[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mmacscl[m[;38;5;108mi[m[;me[m[;38;5;108mn[m[;mt.emacs[m[;m [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mmacscl[m[;38;5;108mi[m[;me[m[;38;5;108mn[m[;mt[m[;m                 [1B[;48;5;236m [m[;m [;mdbus-update-activation-[m[;38;5;108me[m[;mnv[m[;38;5;108mi[m[;mro[m[;38;5;108mn[m[;mment[m[1B[;48;5;236m [m[;m [;mgnome-s[m[;38;5;108me[m[;mssion-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mhibit[m[1B[;48;5;236m [m[;m [;mpamd[m[;38;5;108me[m[;m[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mterlace[m[1B[;48;5;236m [m[;m [;mmak[m[;38;5;108me[m[;m[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mdex[m[;m               [1B[;48;5;236m [m[;m [;misdv4-s[m[;38;5;108me[m[;mrial-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mputattach[m[1B[;48;5;236m [m[;m [;mgrub-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mte[m[;38;5;108mn[m[;mv[m[;m         [1B[;48;5;236m [m[;m [;mdeb-syst[m[;38;5;108me[m[;mmd-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mvoke[m[;m [1B[;48;5;236m [m[;m [;msyst[m[;38;5;108me[m[;mmd-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mhibit[m[;m   [1B[;48;5;236m [m[;m [;mgstreamer-cod[m[;38;5;108me[m[;mc-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mstall[m[1B[;48;5;236m [m[;m [;mbyobu-launch[m[;38;5;108me[m[;mr-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mstall[m[1B[;48;5;236m [m[;m [;mkern[m[;38;5;108me[m[;ml-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mstall[m[1B[;48;5;236m [m[;m [;mdesktop-fil[m[;38;5;108me[m[;m-[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mstall[m[1B[;48;5;236m [m[;m [;mmake-first-[m[;38;5;108me[m[;mxist[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mg-target[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mgl[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mfo.x86_64-linux-gnu[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mgl[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mfo[m[;m                 [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mce-thumbnailer[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mce-previewer[m[;m       [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mce[m[;m                [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;ms2_[m[;38;5;108mi[m[;m[m[;38;5;108mn[m[;mfo.x86_64-linux-gnu[m[1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236me[m[;1;38;5;254;48;5;236ms2_[m[;1;38;5;151;48;5;236mi[m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236mn[m[;1;38;5;254;48;5;236mfo[m[;m            [2B[5C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1mei[m[;1m[m[1A[;m                                                                 [2C[;38;5;144m258/2338[m[25A[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mmacscl[m[;38;5;108mi[m[;ment[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;ms2tr[m[;38;5;108mi[m[;m.x86_64-linux-gnu[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;ms2tr[m[;38;5;108mi[m[;m                 [1B[;48;5;236m [m[;m [;mdbus-update-activation-[m[;38;5;108me[m[;mnv[m[;38;5;108mi[m[;mronment[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mgl[m[;38;5;108mi[m[;mnfo.x86_64-linux-gnu[m[1B[;48;5;236m [m[;m [;mxdg-[m[;38;5;108me[m[;mma[m[;38;5;108mi[m[;ml[m[;m                         [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mgl[m[;38;5;108mi[m[;mnfo[m[;m              [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mxp[m[;38;5;108mi[m[;mry[m[;m        [1B[;48;5;236m [m[;m [;mmake-first-[m[;38;5;108me[m[;mx[m[;38;5;108mi[m[;msting-target[m[1B[;48;5;236m [m[;m [;mnm-connection-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mtor[m[;m    [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;mnce-thumbnailer[m[1B[;48;5;236m [m[;m [;mdesktop-file-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mt[m[;m [1B[;48;5;236m [m[;m [;mgnome-text-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mtor[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;mnce-previewer[m[;m       [1B[;48;5;236m [m[;m [;msensible-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mtor[m[;m       [1B[;48;5;236m [m[;m [;mselect-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mtor[m[;m [1B[;48;5;236m [m[;m [;mgrub-glue-[m[;38;5;108me[m[;mf[m[;38;5;108mi[m[;m       [1B[;48;5;236m [m[;m [;mgrub-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mtenv[m[;m              [1B[;48;5;236m [m[;m [;mnmtui-[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mt[m[;m              [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mtres[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mv[m[;38;5;108mi[m[;mnce[m[;m            [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mtor[m[;m          [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;md[m[;38;5;108mi[m[;mt[m[;m  [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;ms2_[m[;38;5;108mi[m[;mnfo.x86_64-linux-gnu[m[1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236me[m[;1;38;5;254;48;5;236ms2_[m[;1;38;5;151;48;5;236mi[m[;1;38;5;254;48;5;236mnfo[m[2B[4C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1me[m[;1m[m[3C[1A[;m                                                                 [2C[;38;5;144m1149/2338[m[25A[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mvince[m[;m     [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mrb3.0[m[;m                 [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mxpiry[m[1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mditor[m[;m                            [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;muptex[m[;m                  [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mnc2xs[m[;m   [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mject[m[;m  [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;msc-m[m[;m [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mgrep[m[;m                     [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mtags[m[;m               [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mptex[m[;m             [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mmacs[m[;m            [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mtex[m[;m             [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mdit[m[;m            [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mcho[m[;m           [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mxpr[m[;m         [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mutp[m[;m         [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mqn[m[;m         [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mog[m[;m       [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mza[m[;m    [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mnv[m[;m   [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mbb[m[;m   [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;mrb[m[;m [1B[;48;5;236m [m[;m [;m[m[;38;5;108me[m[;md[m[;m                       [1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236m[m[;1;38;5;151;48;5;236me[m[;1;38;5;254;48;5;236mx[m[;m      [2B[3C[;m                                                                 [;1;38;5;110m>[m[;m [m[;1m[m[;1m[m[1A[;m                                                                 [2C[;38;5;144m2338/2338[m[25A[;48;5;236m [m[;m [;minstall-printerdriver[m[1B[;48;5;236m [m[;m [;msg_reset_wp[m[1B[;48;5;236m [m[;m [;morca[m[;m  [1B[;48;5;236m [m[;m [;mgrub-mkrescue[m[1B[;48;5;236m [m[;m [;mavinfo[m[1B[;48;5;236m [m[;m [;mmkzftree[m[1B[;48;5;236m [m[;m [;mfig2dev[m[1B[;48;5;236m [m[;m [;mpl2pm[m[1B[;48;5;236m [m[;m [;mgst-launch-1.0[m[1B[;48;5;236m [m[;m [;mctags[m[1B[;48;5;236m [m[;m [;mtrue[m[;m [1B[;48;5;236m [m[;m [;mbtrfs-convert[m[1B[;48;5;236m [m[;m [;m[[m[;m   [1B[;48;5;236m [m[;m [;mdh_numpy3[m[1B[;48;5;236m [m[;m [;mscsi_readcap[m[1B[;48;5;236m [m[;m [;mrdma[m[1B[;48;5;236m [m[;m [;mt1unmac[m[1B[;48;5;236m [m[;m [;mrpmgraph[m[1B[;48;5;236m [m[;m [;misdv4-serial-inputattach[m[1B[;48;5;236m [m[;m [;mupdate_rubygems[m[1B[;48;5;236m [m[;m [;mrpmsign[m[1B[;48;5;236m [m[;m [;mppmtobmp[m[1B[;48;5;236m [m[;m [;mbootctl[m[1B[;48;5;236m [m[;m [;mpico[m[1B[;1;38;5;161;48;5;236m>[m[;48;5;236m [m[;1;38;5;254;48;5;236mgrep-debtags[m[2B[2C[?1049l[?1000lgrep-debtags
+[?2004h]0;kc@csc235: /bin[01;32mkc@csc235[00m:[01;34m/bin[00m$ cd /home/kc/CSC235/; useradd -s /bin/date einstim e
+[?2004luseradd: user 'einstime' already exists
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su -[K[K[K[Ksu - serena
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su - guest
+[?2004lPassword: 
+[?2004h]0;guest@csc235: ~[01;32mguest@csc235[00m:[01;34m~[00m$ logout
+[?2004l[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ useradd =d[Ks[K[K-s $(which date) einstime2
+[?2004luseradd: Permission denied.
+useradd: cannot lock /etc/passwd; try again later.
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo !!
+[?2004lsudo useradd -s $(which date) einstime2
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su - einstime2
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su - einstime2
+[?2004lPassword: 
+su: Authentication failure
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ tail -5 /etc/passwd
+[?2004ltest:x:1002:1002::/home/test:/bin/sh
+serena:x:1003:1003:Serena Williams:/home/serena:/bin/sh
+venus:x:1004:1004:Venus Williams:/home/venus:/bin/bash
+einstime:x:1005:1005::/home/einstime:/bin/date
+einstime2:x:1006:1006::/home/einstime2:/usr/bin/date
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ fj[K[Ksudo passwd einstime
+[?2004lNew password: 
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: 
+passwd: password updated successfully
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo passwd einstime2
+[?2004lNew password: 
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: 
+passwd: password updated successfully
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su - einstime
+[?2004lPassword: 
+su: warning: cannot change directory to /home/einstime: No such file or directory
+Fri Dec  8 01:29:11 PM PST 2023
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ su - einstime2
+[?2004lPassword: 
+su: warning: cannot change directory to /home/einstime2: No such file or directory
+Fri Dec  8 01:29:22 PM PST 2023
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ echo Hello ?[K> /etc/skel/welcome.txt
+[?2004lbash: /etc/skel/welcome.txt: Permission denied
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ sudo !!
+[?2004lsudo echo Hello > /etc/skel/welcome.txt
+bash: /etc/skel/welcome.txt: Permission denied
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ logout
+[?2004lbash: logout: not login shell: use `exit'
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ exit
+[?2004lexit
+
+Script done on 2023-12-08 13:30:49-08:00 [COMMAND_EXIT_CODE="1"]
+Script started, output log file is 'test'.
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ jf^C[?2004l[?2004h[?2004l
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ 
+[?2004l[?2004h]0;kc@csc235: ~/CSC235[01;32mkc@csc235[00m:[01;34m~/CSC235[00m$ [?2004l
+exit
+Script done.
